@@ -122,6 +122,10 @@ title: Home
             {% if paper.notebook %}
               <a class="button" href="{{ paper.notebook }}" target="_blank">Python Notebook</a>
             {% endif %}
+             
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
