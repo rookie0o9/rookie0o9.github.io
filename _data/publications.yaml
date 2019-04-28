@@ -4,6 +4,7 @@ papers:
     authors: "Richard Galvez, David F. Fouhey, Meng Jin, Alexandre Szenicer, Andrés Muñoz-Jaramillo, Mark C. M. Cheung, <b>Paul J. Wright</b>, Monica G. Bobra, Yang Liu, James Mason, Rajat Thomas"
     venue: "ArXiv (Accepted ApJ), 2019"
     paper_pdf: "https://arxiv.org/abs/1903.04538"
+    data: "projects/2019_MLDataset"
     selected: y
     
   - title: "DeepEM: A Deep Learning Approach for DEM Inversion"
