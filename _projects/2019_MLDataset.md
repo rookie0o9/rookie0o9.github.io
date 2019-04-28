@@ -22,6 +22,6 @@ The dataset is available through the Stanford Digital Repository at:
 
 -----
 
-An example of the fles available in the Stanford Digital Repository is shown below for the 2010 dataset ([https://purl.stanford.edu/vk217bh4910](https://purl.stanford.edu/vk217bh4910)):
+An example of the files available in the Stanford Digital Repository are shown below for the 2010 dataset ([https://purl.stanford.edu/vk217bh4910](https://purl.stanford.edu/vk217bh4910)):
 
 <iframe src='https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/vk217bh4910' height='400px' width='100%' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' allowfullscreen />
