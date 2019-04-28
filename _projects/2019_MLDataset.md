@@ -10,12 +10,12 @@ The dataset is available through the Stanford Digital Repository at:
 
 | Year          |   Stanford Digital Repository Link    |
 | ------------- |:--------------------------------------| 
-| 2010          | https://purl.stanford.edu/vk217bh4910 | 
-| 2011          | https://purl.stanford.edu/jc488jb7715 |
-| 2012          | https://purl.stanford.edu/dc156hp0190 |
-| 2013          | https://purl.stanford.edu/km388vz4371 |
-| 2014          | https://purl.stanford.edu/sr325xz9271 | 
-| 2015          | https://purl.stanford.edu/qw012qy2533 |
-| 2016          | https://purl.stanford.edu/vf806tr8954 | 
-| 2017          | https://purl.stanford.edu/kp222tm1554 | 
-| 2018          | https://purl.stanford.edu/nk828sc2920 | 
+| 2010          | [https://purl.stanford.edu/vk217bh4910](https://purl.stanford.edu/vk217bh4910) | 
+| 2011          | [https://purl.stanford.edu/jc488jb7715](https://purl.stanford.edu/jc488jb7715) |
+| 2012          | [https://purl.stanford.edu/dc156hp0190](https://purl.stanford.edu/dc156hp0190) |
+| 2013          | [https://purl.stanford.edu/km388vz4371](https://purl.stanford.edu/km388vz4371) |
+| 2014          | [https://purl.stanford.edu/sr325xz9271](https://purl.stanford.edu/sr325xz9271) | 
+| 2015          | [https://purl.stanford.edu/qw012qy2533](https://purl.stanford.edu/qw012qy2533) |
+| 2016          | [https://purl.stanford.edu/vf806tr8954](https://purl.stanford.edu/vf806tr8954) | 
+| 2017          | [https://purl.stanford.edu/kp222tm1554](https://purl.stanford.edu/kp222tm1554) | 
+| 2018          | [https://purl.stanford.edu/nk828sc2920](https://purl.stanford.edu/nk828sc2920) | 
