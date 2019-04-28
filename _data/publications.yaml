@@ -14,19 +14,19 @@ papers:
     selected: y   
 
   - title: "First <i>NuSTAR</i> Limits on Quiet Sun Hard X-Ray Transient Events"
-    authors: "Andrew J. Marsh, David M. Smith, Lindsay Glesener, Iain G. Hannah, Brian W. Grefenstette, Amir Caspi, Säm Krucker, Hugh S. Hudson; Kristin K. Madsen, Stephen M. White, Matej Kuhar, <b>Paul J. Wright</b>, Steven E. Boggs, Finn E. Christensen, William W. Craig, Charles J. Hailey, Fiona A. Harrison, Daniel Stern, William W. Zhang"
+    authors: "Andrew J. Marsh, David M. Smith, Lindsay Glesener, Iain G. Hannah, Brian W. Grefenstette, Amir Caspi, Säm Krucker, Hugh S. Hudson, Kristin K. Madsen, Stephen M. White, Matej Kuhar, <b>Paul J. Wright</b>, Steven E. Boggs, Finn E. Christensen, William W. Craig, Charles J. Hailey, Fiona A. Harrison, Daniel Stern, William W. Zhang"
     venue: "Astrophysical Journal, 2017"
     paper_pdf: "https://iopscience.iop.org/article/10.3847/1538-4357/aa9122/meta"
     selected: n
 
   - title: "Observations of Reconnection Flows in a Flare on the Solar Disk"
-    authors: "Juntao Wang; Paulo J. A. Simões, P. J. A., Natasha L. S. Jeffrey, Lyndsay Fletcher, <b>Paul J. Wright</b>, Iain G. Hannah"
+    authors: "Juntao Wang, Paulo J. A. Simões, Natasha L. S. Jeffrey, Lyndsay Fletcher, <b>Paul J. Wright</b>, Iain G. Hannah"
     venue: "The Astrophysical Journal Letters, 2017"
     paper_pdf: "https://iopscience.iop.org/article/10.3847/2041-8213/aa8904"
     selected: n
 
   - title: "Microflare Heating of a Solar Active Region Observed with <i>NuSTAR</i>, <i>Hinode</i>/XRT, and <i>SDO</i>/AIA"
-    authors: "<b>Wright, Paul J.</b>; Hannah, Iain G.; Grefenstette, Brian W.; Glesener, Lindsay; Krucker, Säm; Hudson, Hugh S.; Smith, David M.; Marsh, Andrew J.; White, Stephen M.; Kuhar, Matej"
+    authors: "<b>Paul J. Wright</b>, Iain G. Hannah, Brian W. Grefenstette, Lindsay Glesener, Säm Krucker, Hugh S. Hudson, David M. Smith, Andrew J. Marsh, Stephen M. White, Matej Kuhar"
     venue: "The Astrophysical Journal, 2017"
     paper_pdf: "https://iopscience.iop.org/article/10.3847/1538-4357/aa7a59/meta"
     poster: "."
@@ -35,7 +35,7 @@ papers:
     selected: y
     
   - title: "Evidence of Significant Energy Input in the Late Phase of a Solar Flare from <i>NuSTAR</i> X-Ray Observations"
-    authors: "Kuhar, Matej; Krucker, Säm; Hannah, Iain G.; Glesener, Lindsay; Saint-Hilaire, Pascal; Grefenstette, Brian W.; Hudson, Hugh S.; White, Stephen M.; Smith, David M.; Marsh, Andrew J.; <b>Wright, Paul J.</b>; Boggs, Steven E.; Christensen, Finn E.; Craig, William W.; Hailey, Charles J.; Harrison, Fiona A.; Stern, Daniel; Zhang, William W."
+    authors: "Matej Kuhar, Säm Krucker, Iain G. Hannah, Lindsay Glesener, Pascal Saint-Hilaire, Brian W. Grefenstette, Hugh S. Hudson, Stephen M. White, David M. Smith, Andrew J. Marsh, <b>Paul J. Wright</b>, Steven E. Boggs, Finn E. Christensen, William W. Craig, Charles J. Hailey, Fiona A. Harrison, Daniel Stern, William W. Zhang"
     venue: "The Astrophysical Journal, 2017"
     paper_pdf: "https://iopscience.iop.org/article/10.3847/1538-4357/835/1/6/meta"
     selected: n
