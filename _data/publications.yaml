@@ -1,7 +1,7 @@
 papers:
 
   - title: "Machine Learning Dataset Prepared From the NASA <i>Solar Dynamics Observatory</i> Mission"
-    authors: "Galvez, Richard Galvez, David F. Fouhey, Meng Jin, Alexandre Szenicer, Andrés Muñoz-Jaramillo, Mark C. M. Cheung, <b>Paul J. Wright</b>, Monica G. Bobra, Yang Liu, James Mason, Rajat Thomas"
+    authors: "Richard Galvez, David F. Fouhey, Meng Jin, Alexandre Szenicer, Andrés Muñoz-Jaramillo, Mark C. M. Cheung, <b>Paul J. Wright</b>, Monica G. Bobra, Yang Liu, James Mason, Rajat Thomas"
     venue: "ArXiv (Accepted ApJ), 2019"
     paper_pdf: "https://arxiv.org/abs/1903.04538"
     selected: y
