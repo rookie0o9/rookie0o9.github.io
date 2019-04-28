@@ -19,3 +19,9 @@ The dataset is available through the Stanford Digital Repository at:
 | 2016          | [https://purl.stanford.edu/vf806tr8954](https://purl.stanford.edu/vf806tr8954) | 
 | 2017          | [https://purl.stanford.edu/kp222tm1554](https://purl.stanford.edu/kp222tm1554) | 
 | 2018          | [https://purl.stanford.edu/nk828sc2920](https://purl.stanford.edu/nk828sc2920) | 
+
+-----
+
+An example of the data 2010 dataset is here:
+
+<iframe src='https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/vk217bh4910' height='400px' width='100%' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' allowfullscreen />
