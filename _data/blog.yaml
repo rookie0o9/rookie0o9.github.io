@@ -1,5 +1,9 @@
 blog:
   
+- title: "ML Dataset Prepared From the NASA SDO Mission"
+  date: "05/2019"
+  url: "/projects/2019_MLDataset"
+  
 - title: "DeepEM: A Deep Learning Approach to DEM Inversion"
   #subtitle: "A Deep Learning Approach to DEM Inversion"
   date: "05/2019"
