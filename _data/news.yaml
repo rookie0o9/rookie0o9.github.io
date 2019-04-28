@@ -4,9 +4,10 @@ news:
 #  subtitle: "FDL is an 8-week applied AI accelerator hosted at SETI in Mountain View, CA"
 #  date: "06/2019"
 
-# - title: "Started Postdoc at Stanford:"
-#  subtitle: "SDO/HMI Postdoc"
-#  date: "06/2019"
+ - title: "Machine Learning dataset prepared from the SDO Mission <b>now available</b>"
+  subtitle: "SDO/HMI Postdoc"
+  date: "05/2019"
+  url: "/projects/2019_MLDataset"
   
 - title: "New Website"
   #subtitle: ""
