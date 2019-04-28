@@ -1,0 +1,49 @@
+experiences:
+
+- place: "NASA FDL 2019"
+  time: "May '19 - now"
+  title: "Heliophysics Mentor"
+  subtitle: "Super-resolution Magnetograms"
+  category: "work"
+  
+- place: "Stanford University"
+  time: "May '19 - now"
+  title: "Postdoctoral Research Fellow (HMI)"
+  subtitle: "W. W. Hansen Experimental Physics Lab."
+  category: "work"
+
+- place: "University of Glasgow"
+  time: "Oct '14 - Apr '19"
+  title: "PhD Student"
+  subtitle: "Physics & Astrophysics" #<br/> Thesis title: The energetics of small solar flares and brightenings"
+  category: "school"
+  
+- place: "Smithsonian Institution"
+  time: "Jan - Mar '19"
+  title: "Visiting Scientist"
+  subtitle: "Center for Astrophysics | Harvard & Smithsonian"
+  category: "work"
+  
+- place: "NASA FDL 2018"
+  time: "Jun - Aug '18"
+  title: "Heliophysics Researcher"
+  subtitle: "Space Weather Team"
+  category: "work"
+
+- place: "NASA GSFC"
+  time: "Apr - May '16"
+  title: "Visiting Researcher"
+  subtitle: "Goddard Space Flight Center"
+  category: "work"
+
+- place: "SAO/Harvard"
+  time: "Aug '13 - Jun '14"
+  title: "Research Scholar"
+  subtitle: "Center for Astrophysics | Harvard & Smithsonian <br> Dudley House, Harvard University"
+  category: "school"
+
+- place: "University of Southampton"
+  time: "Oct '10 - Jul '14"
+  title: "MPhys Student"
+  subtitle: "Physics & Astrophysics with a Year Abroad <br/> First Class Honours"
+  category: "school"
