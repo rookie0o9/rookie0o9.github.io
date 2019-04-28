@@ -20,8 +20,21 @@ The dataset is available through the Stanford Digital Repository at:
 | 2017          | [https://purl.stanford.edu/kp222tm1554](https://purl.stanford.edu/kp222tm1554) | 
 | 2018          | [https://purl.stanford.edu/nk828sc2920](https://purl.stanford.edu/nk828sc2920) | 
 
------
+The AIA and HMI data is split in to monthly files, and EVE is provided as one file as shown in the table below (for 2010) where XX can be replaced by the respective 2-digit number corresponding to the required month:
 
-An example of the files available in the Stanford Digital Repository are shown below for the 2010 dataset ([https://purl.stanford.edu/vk217bh4910](https://purl.stanford.edu/vk217bh4910)):
+| AIA                 |   HMI             |    EVE                  |
+| :------------------ | :---------------- | :---------------------- | 
+| AIA_0094_2010XX.tar | HMI_Bx_2010XX.tar | EVE_lines_MEGS-A.tar.gz |
+| AIA_0131_2010XX.tar | HMI_By_2010XX.tar |                         | 
+| AIA_0171_2010XX.tar | HMI_Bz_2010XX.tar |                         | 
+| AIA_0193_2010XX.tar |                   |                         | 
+| AIA_0211_2010XX.tar |                   |                         |  
+| AIA_0304_2010XX.tar |                   |                         | 
+| AIA_0335_2010XX.tar |                   |                         | 
+| AIA_1600_2010XX.tar |                   |                         | 
+| AIA_1700_2010XX.tar |                   |                         | 
+| AIA_4500_2010XX.tar |                   |                         | 
+
+The respective files for 2010 data are shown below:
 
 <iframe src='https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/vk217bh4910' height='400px' width='100%' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' allowfullscreen />
