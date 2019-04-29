@@ -3,10 +3,11 @@ layout: project
 title: Machine Learning Data Set for NASA's Solar Dynamics Observatory
 subtitle: SDO/AIA, SDO/HMI, and SDO/EVE
 ---
+(Galvez et al ApJS, in press)[https://arxiv.org/abs/1903.04538]
 
 We present a curated dataset from the NASA Solar Dynamics Observatory (SDO) mission in a format suitable for machine learning research. Beginning from level 1 scientific products we have processed various instrumental corrections, downsampled to manageable spatial and temporal resolutions, and synchronized observations spatially and temporally. We anticipate this curated dataset will facilitate machine learning research in heliophysics and the physical sciences generally, increasing the scientific return of the SDO mission. This work is a deliverable of the 2018 NASA Frontier Development Lab program. 
 
-The dataset is available through the Stanford Digital Repository at:
+The dataset is available through the Stanford Digital Repository:
 
 | Year          |   Stanford Digital Repository Link    |
 | ------------- |:--------------------------------------| 
@@ -20,7 +21,7 @@ The dataset is available through the Stanford Digital Repository at:
 | 2017          | [https://purl.stanford.edu/kp222tm1554](https://purl.stanford.edu/kp222tm1554) | 
 | 2018          | [https://purl.stanford.edu/nk828sc2920](https://purl.stanford.edu/nk828sc2920) | 
 
-The AIA and HMI data is split in to monthly files, and EVE is provided as one file as shown in the table below (for 2010) where XX can be replaced by the respective 2-digit number corresponding to the required month:
+The AIA and HMI data is split in to monthly files (XX is the 2-digit representation of the month), and EVE is provided as one file such as shown in the table below:
 
 | AIA                 |   HMI             |    EVE                  |
 | :------------------ | :---------------- | :---------------------- | 
@@ -35,6 +36,6 @@ The AIA and HMI data is split in to monthly files, and EVE is provided as one fi
 | AIA_1700_2010XX.tar |                   |                         | 
 | AIA_4500_2010XX.tar |                   |                         | 
 
-The respective files for 2010 data are shown below:
+The corresponding files, as on the Stanford Digital Repository are here:
 
 <iframe src='https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/vk217bh4910' height='400px' width='100%' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' allowfullscreen />
