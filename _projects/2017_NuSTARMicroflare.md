@@ -16,7 +16,7 @@ In this nugget we present the first joint observations of a microflaring active 
 
 <br>
 <figure class="image">
-  <img src="assets/projects/2015_nustarimage/fig1.png" alt="Figure" style="width: 90%"/>
+  <img src="../assets/projects/2015_nustarimage/fig1.png" alt="Figure" style="width: 90%"/>
   <figcaption><b>Figure 1:</b> <i>Time profiles of the SDO/AIA (left) and Hinode/XRT (right) channels from the microflaring loop of AR12333. The vertical bars indicate the four times corresponding to NuSTAR observations of the same region. Images of AR12333 are additionally shown (inset) during the impulsive phase (~11:29 UT), and display clear loop heating.</i></figcaption>
 </figure>
 <br>
@@ -26,7 +26,7 @@ On 29th April 2015 Hinode/XRT was near-continuously observing AR12333, in which 
 
 <br>
 <figure class="image">
-  <img src="assets/projects/2015_nustarimage/fig2.png" alt="Figure" style="width: 90%"/>
+  <img src="../assets/projects/2015_nustarimage/fig2.png" alt="Figure" style="width: 90%"/>
   <figcaption><b>Figure 2:</b> <i>NuSTAR spectrum for the impulsive phase with a single thermal fit (left), and two-thermal fit (right). The NuSTAR 2.5-4.5 keV map with 50-70-90% contours (shown over the same field of view as those in Fig. 1) is inset. The quoted uncertainties are with 90% confidence, and no counts are observed > 7 keV.</i></figcaption>
 </figure>
 <br>
@@ -36,7 +36,7 @@ With this microflare we can calculate the differential emission measure (DEM) di
 
 <br>
 <figure class="image">
-  <img src="assets/projects/2015_nustarimage/fig3.png" alt="Figure" style="width: 90%"/>
+  <img src="../assets/projects/2015_nustarimage/fig3.png" alt="Figure" style="width: 90%"/>
   <figcaption><b>Figure 3:</b> <i>Emission measure distribution for the pre-flare (left) and impulsive (right) phase of the microflare using SDO/AIA, Hinode/XRT and NuSTAR data. The distributions were calculated using a regularized inversion method (RI, pink/maroon) as well as a spline forward fitting approach (XIT, blue/light blue). The NuSTAR EM loci curves (green, yellow, orange) were found for 2.5-4.0, 4.0-5.5 and 5.5-7.0 keV. The Hinode/XRT temperature responses used were multiplied by a factor of two.</i></figcaption>
 </figure>
 <br>
@@ -46,7 +46,7 @@ The NuSTAR spectrum from the impulsive phase of this microflare is purely therma
 
 <br>
 <figure class="image">
-  <img src="assets/projects/2015_nustarimage/fig4.png" alt="Figure" style="width: 90%"/>
+  <img src="../assets/projects/2015_nustarimage/fig4.png" alt="Figure" style="width: 90%"/>
   <figcaption><b>Figure 4:</b> <i>Non-thermal power upper-limits as a function of low energy cutoff (Ec) plotted for different power-law indices (δ). The three estimates for the thermal power from DEM analysis (RI, XIT) and the NuSTAR Fit are plotted with 1σ uncertainties. The grey shaded region represents the required heating power, consistent with all three estimates.</i></figcaption>
 </figure>
 <br>
