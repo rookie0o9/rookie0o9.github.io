@@ -22,7 +22,7 @@ This notebook was developed with [PyTorch](https://pytorch.org/), and is availab
 
 <figure class="image">
   <img src="https://github.com/PaulJWright/DeepEM/blob/master/Misc/DeepEM_171_211.gif?raw=true" alt="DeepEM Gif" style="width: 100%"/>
-  <figcaption><b>Figure 1:</b> <i>Example of the `DeepEM` solution for log_{10}T ~ 5.9 K and 6.3 K, in comparison to the Basis Pursuit solution, and the <i>SDO</i>/AIA images for the same temperature. Additional Gifs can be found in `https://github.com/PaulJWright/DeepEM/Misc/`.</i></figcaption>
+  <figcaption><b>Figure 1:</b> Example of the `DeepEM` solution for log_{10}T ~ 5.9 K and 6.3 K, in comparison to the Basis Pursuit solution, and the <i>SDO</i>/AIA images for the same temperature.</figcaption>
 </figure>
 
 ----
