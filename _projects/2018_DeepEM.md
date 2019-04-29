@@ -20,8 +20,12 @@ The `DeepEM` method presented here takes every DEM solution with no regards to t
 
 This notebook was developed with [PyTorch](https://pytorch.org/), and is available at https://github.com/PaulJWright/DeepEM
 
-<br>
 <figure class="image">
-  <img src="https://github.com/PaulJWright/DeepEM/blob/master/Misc/DeepEM_171_211.gif?raw=true" alt="DeepEM Gif" style="width: 90%"/>
+  <img src="https://github.com/PaulJWright/DeepEM/blob/master/Misc/DeepEM_171_211.gif?raw=true" alt="DeepEM Gif" style="width: 100%"/>
   <figcaption><b>Figure 1:</b> <i>Example of the `DeepEM` solution for log_{10}T ~ 5.9 K and 6.3 K, in comparison to the Basis Pursuit solution, and the <i>SDO</i>/AIA images for the same temperature. Additional Gifs can be found in `https://github.com/PaulJWright/DeepEM/Misc/`.</i></figcaption>
 </figure>
+
+----
+
+<i>This project was initiated during the 2018 NASA Frontier Development Lab (FDL) program, a partnership between NASA, SETI, NVIDIA Corporation, Lockheed Martin, and Kx. We gratefully thank our mentors for guidance and useful discussion, as well as the SETI Institute for their hospitality.</i>
+
