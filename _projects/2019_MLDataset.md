@@ -24,7 +24,8 @@ The dataset is available through the Stanford Digital Repository:
 
 The AIA and HMI data is split in to monthly files (XX is the 2-digit representation of the month), and EVE is provided as one file such as shown in the table below:
 
-| 2010 Data                                                         |
+| :---------------------------------------------------------------: | 
+| This Table corresponds to the files for the 2010 Data             |
 | :-----------------: | :---------------: | :---------------------: | 
 | AIA                 |   HMI             |    EVE                  |
 | :------------------ | :---------------- | :---------------------- | 
@@ -39,9 +40,6 @@ The AIA and HMI data is split in to monthly files (XX is the 2-digit representat
 | AIA_1700_2010XX.tar |                   |                         | 
 | AIA_4500_2010XX.tar |                   |                         | 
   
-| One    | Two | Three | Four    | Five  | Six
-|-|-|-|-|-|-
-| Span <td colspan=3>triple  <td colspan=2>double
   
 The corresponding files, as on the Stanford Digital Repository are here:
 
