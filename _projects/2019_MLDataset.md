@@ -22,10 +22,10 @@ The dataset is available through the Stanford Digital Repository:
 | 2017          | [https://purl.stanford.edu/kp222tm1554](https://purl.stanford.edu/kp222tm1554) | 
 | 2018          | [https://purl.stanford.edu/nk828sc2920](https://purl.stanford.edu/nk828sc2920) | 
 
-The AIA and HMI data is split in to monthly files (XX is the 2-digit representation of the month), and EVE is provided as one file such as shown in the table below:
+The AIA and HMI data is split in to monthly files (XX is the 2-digit representation of the month), and EVE is provided as one file such as shown in the table below.
 
-| :---------------------------------------------------------------: | 
-| This Table corresponds to the files for the 2010 Data             |
+ <h3>This Table corresponds to the files for the 2010 Data</h3>
+ 
 | :-----------------: | :---------------: | :---------------------: | 
 | AIA                 |   HMI             |    EVE                  |
 | :------------------ | :---------------- | :---------------------- | 
