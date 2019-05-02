@@ -1,15 +1,15 @@
 blog:
   
 - title: "ML Dataset Prepared From the NASA SDO Mission"
-  date: "05/2019"
+  date: "04/2019"
   url: "/projects/2019_MLDataset"
   
 - title: "DeepEM: A Deep Learning Approach to DEM Inversion"
   #subtitle: "A Deep Learning Approach to DEM Inversion"
-  date: "05/2019"
+  date: "04/2019"
   url: "/projects/2018_DeepEM"
 
 - title: "The First NuSTAR Microflare"
   #subtitle: "A life of constant travel"
-  date: "05/2019"
+  date: "04/2019"
   url: "/projects/2017_NuSTARMicroflare"
