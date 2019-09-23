@@ -3,7 +3,7 @@ layout: project
 title: Machine Learning Data Set for NASA's Solar Dynamics Observatory
 subtitle: SDO/AIA, SDO/HMI, and SDO/EVE
 ---
-[Galvez et al ApJS, in press](https://arxiv.org/abs/1903.04538)
+[Galvez *et al* 2019 *ApJS* **242** 7](https://arxiv.org/abs/1903.04538)
 
 
 We present a curated dataset from the NASA Solar Dynamics Observatory (SDO) mission in a format suitable for machine learning research. Beginning from level 1 scientific products we have processed various instrumental corrections, downsampled to manageable spatial and temporal resolutions, and synchronized observations spatially and temporally. We anticipate this curated dataset will facilitate machine learning research in heliophysics and the physical sciences generally, increasing the scientific return of the SDO mission. This work is a deliverable of the 2018 NASA Frontier Development Lab program. 
