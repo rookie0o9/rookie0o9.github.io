@@ -30,7 +30,7 @@ papers:
     authors: "<b>Paul J. Wright</b>, Iain G. Hannah, Brian W. Grefenstette, Lindsay Glesener, Säm Krucker, Hugh S. Hudson, David M. Smith, Andrew J. Marsh, Stephen M. White, Matej Kuhar"
     venue: "The Astrophysical Journal, 2017"
     paper_pdf: "https://iopscience.iop.org/article/10.3847/1538-4357/aa7a59/meta"
-    poster: "."
+    poster: "/assets/projects/2015_nustarimage/SPD48_Example.png"
     UKSPNg: "https://www.uksolphys.org/uksp-nugget/84-the-first-nustar-microflare"
     blogpost: "/projects/2017_NuSTARMicroflare"
     selected: y
