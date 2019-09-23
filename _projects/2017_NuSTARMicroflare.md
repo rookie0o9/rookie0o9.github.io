@@ -4,7 +4,7 @@ title: The First <i>NuSTAR</i> Microflare
 subtitle: A tiny X-ray flare resembles bigger events 
 ---
 
-This article was originally publised as [UKSP Nugget (#84)](http://www.uksolphys.org/uksp-nugget/84-the-first-nustar-microflare/) in 2017, and is based upon this [AAS/SPD Poster](http://www.pauljwright.github.io/assets/projects/2015_nustarimage/SPD48_Example.png)
+This article was originally publised as [UKSP Nugget (#84)](http://www.uksolphys.org/uksp-nugget/84-the-first-nustar-microflare/) in 2017, and is based upon this [AAS/SPD Poster](http://www.pauljwright.github.io/projects/2017_SPDPosterPrize)
 
 
 **Introduction**
