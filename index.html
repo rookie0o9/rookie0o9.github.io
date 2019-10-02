@@ -98,6 +98,10 @@ title: Home
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
             {% endif %}
+            
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code | prepend: site.baseurl }}" target="_blank">Code</a>
+            {% endif %}
 
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
@@ -113,6 +117,10 @@ title: Home
 
             {% if paper.blogpost %}
               <a class="button" href="{{ paper.blogpost | prepend: site.baseurl }}" target="_blank">Blog post</a>
+            {% endif %}
+            
+            {% if paper.pressrel %}
+              <a class="button" href="{{ paper.pressrel | prepend: site.baseurl }}" target="_blank">Press Coverage</a>
             {% endif %}
             
             {% if paper.video %}

@@ -1,5 +1,15 @@
 papers:
 
+  - title: "A Deep Learning Virtual Instrument for Monitoring Extreme UV Solar Spectral Irradiance"
+    authors: "Alexandre Szenicer, David F. Fouhey, Andrés Muñoz-Jaramillo, <b>Paul J. Wright</b>, Rajat Thomas, Richard Galvez, Meng Jin, Mark C. M. Cheung"
+    venue: "Science Advances, 2019"
+    paper_pdf: "https://advances.sciencemag.org/content/5/10/eaaw6548"
+    code: "https://github.com/AlexSzen/sw-irradiance"
+    blogpost: "/projects/2019_ScienceAdvances"
+    #pressrel: "/projects/2019_ScienceAdvancesPress"
+    #video: "/assets/projects/2019_SA/StoryBoard.m4v"
+    selected: y
+    
   - title: "Machine Learning Dataset Prepared From the NASA <i>Solar Dynamics Observatory</i> Mission"
     authors: "Richard Galvez, David F. Fouhey, Meng Jin, Alexandre Szenicer, Andrés Muñoz-Jaramillo, Mark C. M. Cheung, <b>Paul J. Wright</b>, Monica G. Bobra, Yang Liu, James Mason, Rajat Thomas"
     venue: "Astrophysical Journal Supplement Series, 2019"
@@ -8,7 +18,7 @@ papers:
     selected: y
     
   - title: "DeepEM: A Deep Learning Approach for DEM Inversion"
-    authors: "<b>Paul J. Wright</b>, Mark Cheung, Rajat Thomas, Richard Galvez, Alexandre Szenicer, Meng Jin, Andrés Muñoz-Jaramillo, David Fouhey"
+    authors: "<b>Paul J. Wright</b>, Mark C. M. Cheung, Rajat Thomas, Richard Galvez, Alexandre Szenicer, Meng Jin, Andrés Muñoz-Jaramillo, David Fouhey"
     venue: "Helio-ML eBook, 2018"
     notebook: "https://Helioml.github.io/HelioML/04/1/notebook"
     blogpost: "/projects/2018_DeepEM"
