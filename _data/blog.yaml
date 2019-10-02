@@ -1,5 +1,9 @@
 blog:
   
+- title: "Using Deep Learning to Monitor the Sun’s Ultraviolet Emission"
+  date: "10/2019"
+  url: "/projects/2019_ScienceAdvances"
+
 - title: "ML Dataset Prepared From the NASA SDO Mission"
   date: "04/2019"
   url: "/projects/2019_MLDataset"
