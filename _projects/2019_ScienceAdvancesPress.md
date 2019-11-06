@@ -12,7 +12,10 @@ subtitle: A Deep Learning Virtual Instrument for Monitoring Solar Extreme Ultrav
 - [Tech Explorist](https://www.techexplorist.com/monitoring-suns-ultraviolet-emission-using-deep-learning/26846/)
 - [Mashable](https://in.mashable.com/science/7367/nasa-frontier-development-lab-uses-deep-learning-to-monitor-suns-uv-radiation)
 - [Scientific American](https://www.scientificamerican.com/article/black-holes-volcanic-scrolls-and-a-teeny-tiny-heartbeat-science-gifs-to-start-your-week/)
-- SwRI
+- [SwRI](https://www.swri.org/press-release/deep-learning-virtual-super-instrument-algorithm)
+- [Edgy.app](https://edgy.app/nasa-scientists-use-deep-learning-to-create-a-super-instrument?order=desc)
+- [EOS](https://eos.org/articles/virtual-super-instrument-enhances-solar-spacecraft)
+- [The Daily Space](https://www.patreon.com/posts/andromeda-eats-30473205)
 
 ----
 

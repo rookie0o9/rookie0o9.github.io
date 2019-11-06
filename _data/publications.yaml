@@ -1,7 +1,23 @@
 papers:
 
+  - title: "Single-Frame Super-Resolution of Solar Magnetograms: Investigating Physics-Based Metrics & Losses"
+    authors: "Anna Jungbluth<sup>†</sup>, Xavier Gitiaux<sup>†</sup>, Shane Maloney<sup>†</sup>, Carl Shneider<sup>†</sup>, <b>Paul J. Wright</b>, Alfredo Kalaitzis, Michel Deudon, Atılım Güneş Baydin, Yarin Gal, Andrés Muñoz-Jaramillo"
+    venue: "In Second Workshop on Machine Learning and the Physical Sciences (NeurIPS 2019), Vancouver, Canada"
+    preprint: "https://arxiv.org/abs/1911.01490"
+    workshop_website: "https://ml4physicalsciences.github.io/"
+    selected: y
+  - title: "Probabilistic Super-Resolution of Solar Magnetograms: Generating Many Explanations and Measuring Uncertainties"
+    authors: "Xavier Gitiaux<sup>†</sup>, Shane Maloney<sup>†</sup>, Anna Jungbluth<sup>†</sup>, Carl Shneider<sup>†</sup>, <b>Paul J. Wright</b>, Alfredo Kalaitzis, Michel Deudon, Atılım Güneş Baydin, Yarin Gal, Andrés Muñoz-Jaramillo"
+    venue: "In Fourth Workshop on Bayesian Deep Learning (NeurIPS 2019), Vancouver, Canada"
+    preprint: "https://arxiv.org/abs/1911.01486"
+    workshop_website: "http://bayesiandeeplearning.org/"
+    selected: y
+  - title: ""
+    authors: "&nbsp;&nbsp;&nbsp;&nbsp; <sup>†</sup> Researchers at NASA Frontier Development Lab (FDL) 2019 (Mentored/Advised)"
+    venue: "</br>"
+   
   - title: "A Deep Learning Virtual Instrument for Monitoring Extreme UV Solar Spectral Irradiance"
-    authors: "Alexandre Szenicer, David F. Fouhey, Andrés Muñoz-Jaramillo, <b>Paul J. Wright</b>, Rajat Thomas, Richard Galvez, Meng Jin, Mark C. M. Cheung"
+    authors: "Alexandre Szenicer<sup>‡</sup>, David F. Fouhey, Andrés Muñoz-Jaramillo, <b>Paul J. Wright</b><sup>‡</sup>, Rajat Thomas<sup>‡</sup>, Richard Galvez<sup>‡</sup>, Meng Jin, Mark C. M. Cheung"
     venue: "Science Advances, 2019"
     paper_pdf: "https://advances.sciencemag.org/content/5/10/eaaw6548"
     code: "https://github.com/AlexSzen/sw-irradiance"
@@ -9,21 +25,22 @@ papers:
     #pressrel: "/projects/2019_ScienceAdvancesPress"
     #video: "/assets/projects/2019_SA/StoryBoard.m4v"
     selected: y
-    
   - title: "Machine Learning Dataset Prepared From the NASA <i>Solar Dynamics Observatory</i> Mission"
-    authors: "Richard Galvez, David F. Fouhey, Meng Jin, Alexandre Szenicer, Andrés Muñoz-Jaramillo, Mark C. M. Cheung, <b>Paul J. Wright</b>, Monica G. Bobra, Yang Liu, James Mason, Rajat Thomas"
+    authors: "Richard Galvez<sup>‡</sup>, David F. Fouhey, Meng Jin, Alexandre Szenicer<sup>‡</sup>, Andrés Muñoz-Jaramillo, Mark C. M. Cheung, <b>Paul J. Wright</b><sup>‡</sup>, Monica G. Bobra, Yang Liu, James Mason, Rajat Thomas<sup>‡</sup>"
     venue: "Astrophysical Journal Supplement Series, 2019"
     paper_pdf: "https://iopscience.iop.org/article/10.3847/1538-4365/ab1005"
     data: "projects/2019_MLDataset"
     selected: y
-    
   - title: "DeepEM: A Deep Learning Approach for DEM Inversion"
-    authors: "<b>Paul J. Wright</b>, Mark C. M. Cheung, Rajat Thomas, Richard Galvez, Alexandre Szenicer, Meng Jin, Andrés Muñoz-Jaramillo, David Fouhey"
+    authors: "<b>Paul J. Wright</b><sup>‡</sup>, Mark C. M. Cheung, Rajat Thomas<sup>‡</sup>, Richard Galvez<sup>‡</sup>, Alexandre Szenicer<sup>‡</sup>, Meng Jin, Andrés Muñoz-Jaramillo, David Fouhey"
     venue: "Helio-ML eBook, 2018"
     notebook: "https://Helioml.github.io/HelioML/04/1/notebook"
     blogpost: "/projects/2018_DeepEM"
     selected: y   
-
+  - title: ""
+    authors: "&nbsp;&nbsp;&nbsp;&nbsp; <sup>‡</sup> Researchers at NASA Frontier Development Lab (FDL) 2018"
+    venue: "</br>"
+    
   - title: "First <i>NuSTAR</i> Limits on Quiet Sun Hard X-Ray Transient Events"
     authors: "Andrew J. Marsh, David M. Smith, Lindsay Glesener, Iain G. Hannah, Brian W. Grefenstette, Amir Caspi, Säm Krucker, Hugh S. Hudson, Kristin K. Madsen, Stephen M. White, Matej Kuhar, <b>Paul J. Wright</b>, Steven E. Boggs, Finn E. Christensen, William W. Craig, Charles J. Hailey, Fiona A. Harrison, Daniel Stern, William W. Zhang"
     venue: "Astrophysical Journal, 2017"

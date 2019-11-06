@@ -1,6 +1,18 @@
 news:
 
-- title: "New Deep Learning Paper Published by Science Advances; <b><a href='/projects/2019_ScienceAdvances'>see the press coverage here</a></b>"
+# - title: "Attended at NeurIPS 2019"
+#  date: "12/2019"
+  
+# - title: "Presented at AGU Fall Meeting 2019"
+#  date: "12/2019"
+  
+- title: "Two Deep Learning Papers Accepted to Workshops at NeurIPS 2019 (Vancouver, Canada)"
+  date: "11/2019"
+  
+- title: "Intel AI blog post of our FDL 2019 challenge: <b><a href='https://www.intel.ai/intel-ai-nasa-fdl-for-solar-magnetic-field-data/?spredfast-trk-id=sf222180011&mc_cid=2cd1da8385&mc_eid=a4b97384e8#gs.blznk9'>available here</a></b>"
+  date: "10/2019" 
+
+- title: "New Deep Learning Paper Published by Science Advances: <b><a href='/projects/2019_ScienceAdvances'>see the press coverage here</a></b>"
   date: "10/2019"
   
 - title: "Presented at the 1st Machine Learning in Heliophysics (<a href='https://ml-helio.github.io/'>ML-Helio</a>) Conference"
