@@ -1,19 +1,19 @@
 projects:
 
- # - title: "DeepEM"
- #   subtitle: "Deep Learning approach to DEM Inversion"
- #   thumbnail: "assets/projects/2018_deepem/171.gif"
- #   #url: "projects/2016_network-ab-testing.html"
- #   selected: y
+  - title: "DeepEM"
+    subtitle: "Deep Learning approach to DEM Inversion"
+    thumbnail: "assets/projects/2018_deepem/171.gif"
+    #url: "projects/2016_network-ab-testing.html"
+    selected: y
     
- # - title: "NASA FDL 2018"
- #   subtitle: "Frontier Development Lab 2018"
- #   thumbnail: "assets/projects/2018_FDL/SW_badge.png"
- #   #url: "projects/2016_network-ab-testing.html"
- #   selected: y    
+  - title: "NASA FDL 2018"
+    subtitle: "Frontier Development Lab 2018"
+    thumbnail: "assets/projects/2018_FDL/SW_badge.png"
+    #url: "projects/2016_network-ab-testing.html"
+    selected: y    
     
- # - title: "<i>NuSTAR</i> Solar Campaign"
- #   subtitle: "First <i>NuSTAR</i> Microflare"
- #   thumbnail: "assets/projects/2015_nustarimage/thumbnail.jpg"
- #   #url: "projects/2016_network-ab-testing.html"
- #   selected: y
+  - title: "<i>NuSTAR</i> Solar Campaign"
+    subtitle: "First <i>NuSTAR</i> Microflare"
+    thumbnail: "assets/projects/2015_nustarimage/thumbnail.jpg"
+    #url: "projects/2016_network-ab-testing.html"
+    selected: y
