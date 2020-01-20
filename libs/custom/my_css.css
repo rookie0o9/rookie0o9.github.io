@@ -98,7 +98,7 @@ h4 {
 }
 
 /* Larger than tablet 750 */
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
