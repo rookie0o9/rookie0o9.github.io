@@ -74,11 +74,11 @@ h4 {
 
 /*  ================ Project styling  ================ */
 .project-container {
-  margin-bottom: 30px;
+  margin-bottom: 0px; /* 30px */
 }
 .project-image-container {
-  border: 1px solid rgba(0,0,0,0.2);
-  padding: 3px;
+  border: 1px solid rgba(0,0,0,0.2); /* REMOVE BORDER */
+  /* padding: 3px;  */
   transition: 0.3s;
 }
 .project-image-container:hover {
@@ -93,8 +93,8 @@ h4 {
 
 /* Larger than phone */
 @media (min-width: 550px) {
-  .header {
-    margin-top: 5rem; }
+  /* .header {
+    margin-top: 5rem; } */
 }
 
 /* Larger than tablet 750 */

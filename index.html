@@ -7,41 +7,46 @@ title: Home
   <h4>Bio</h4>
   <p>
   I am a Postdoctoral Research Fellow in the Department of Physics (and the W. W. Hansen Experimental Physics Laboratory) at <a href="https://profiles.stanford.edu/216600" target="_blank">Stanford University</a>; a Mentor at the <a href="https://frontierdevelopmentlab.org/" target="_blank">NASA Frontier Development Lab</a>; and a member of <a href="http://www.orionailabs.com/team-moonraider">Orion (AI) Labs</a> as a participant in the <a href="https://www.nasa.gov/solve/space-robotics-challenge-phase-2/">NASA Space Robotics Challenge Phase 2</a>.
-  My research interests are in the application of machine learning in heliophysics and space science. Feel free to check out my current <a href="./projects.html"><span style="color:#44a340;">p</span><span style="color:#3f9b3c;">r</span><span style="color:#399238;">o</span><span style="color:#348a34;">j</span><span style="color:#2e812f;">e</span><span style="color:#29792b;">c</span><span style="color:#237027;">t</span><span style="color:#1e6823;">s</span></a>!
+  My research interests are in the application of machine learning in heliophysics and space science. Feel free to check out my current <a href="./projects.html"><span style="color:#44a340;">p</span><span style="color:#3f9b3c;">r</span><span style="color:#399238;">o</span><span style="color:#348a34;">j</span><span style="color:#2e812f;">e</span><span style="color:#29792b;">c</span><span style="color:#237027;">t</span><span style="color:#1e6823;">s</span></a>, or what I have been working through recently, 📓. I am currently reading <b>Computer Vision: Algorithms and Applications</b> by <i>Richard Szeliski</i>.
   </p>
 
   <p>
   Prior to coming to Stanford, I completed my PhD at the University of Glasgow under the supervision of <a href="http://www.astro.gla.ac.uk/~iain/" target="_blank">Dr Iain G. Hannah</a>.
-  My PhD research concentrated on one of the unsolved problems in Heliophysics—the coronal heating problem. 
-  During my PhD I gained expertise in numerous time-series analysis techniques and methods for recovering the differential emission measure (an ill-posed inverse problem) from a wide range of spectroscopic and narrowband data. 
-  I am a member of the <i>NuSTAR</i> heliophysics working group and I led the analysis of the first solar flare observed by the <i>NuSTAR</i> hard X-ray <i>astrophysics</i> imaging spectrometer. 
+  My PhD research concentrated on one of the unsolved problems in Heliophysics—the coronal heating problem.
+  During my PhD I gained expertise in numerous time-series analysis techniques and methods for recovering the differential emission measure (an ill-posed inverse problem) from a wide range of spectroscopic and narrowband data.
+  I am a member of the <i>NuSTAR</i> heliophysics working group and I led the analysis of the first solar flare observed by the <i>NuSTAR</i> hard X-ray <i>astrophysics</i> imaging spectrometer.
   <!--I have also developed a stellar flare detection algorithm based on the observations obtained by the <i>Kepler</i> space telescope to determine the superflare rate of the Sun.-->
-
   </p>
 
+  <p>
+  Google Cloud recently released a video discussing some of the challenges we try to tackle at the NASA Frontier Development Lab (FDL):
+  </p>
+  <div class="youtube_container">
+  <iframe src="https://www.youtube.com/embed/RtAtsEyAWA4" frameborder="0" allowfullscreen class="video"></iframe>
+  </div>
 </div>
 
 <!-- ========== NEWS ========== -->
 <div class="docs-section" id="news">
   <h4>News</h4>
-  
+
   <ul>
     {% for nw in site.data.news.news %}
     <!-- <a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a> -->
-    
+
     <div class="row"><div class="twop columns"><b>{{ nw.date }}</b></div> <div class="ten columns">{{ nw.title }} <i>{{ nw.subtitle }}</i></div></div>
     {% endfor %}
   </ul>
-    
+
 </div>
-          
+
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
   <p>Complete list of publications on <a href="https://bit.ly/ADSWright" target="_blank">NASA ADS</a>.</p>
-  
-  <!-- 
+
+  <!--
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
     <li><div class="button" data-ref="#papers-all">All</div></li>
@@ -67,7 +72,7 @@ title: Home
             {% if paper.poster %}
               <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
             {% endif %}
-            
+
             {% if paper.UKSPNg %}
               <a class="button" href="{{ paper.UKSPNg | prepend: site.baseurl }}" target="_blank">UKSP Nugget</a>
             {% endif %}
@@ -98,16 +103,16 @@ title: Home
             {% if paper.preprint %}
               <a class="button" href="{{ paper.preprint | prepend: site.baseurl }}" target="_blank">Preprint</a>
             {% endif %}
-            
+
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
             {% endif %}
-            
+
             {% if paper.workshop_website %}
               <a class="button" href="{{ paper.workshop_website | prepend: site.baseurl }}" target="_blank">Workshop Website</a>
             {% endif %}
-            
-            
+
+
             {% if paper.code %}
               <a class="button" href="{{ paper.code | prepend: site.baseurl }}" target="_blank">Code</a>
             {% endif %}
@@ -119,7 +124,7 @@ title: Home
             {% if paper.poster %}
               <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
             {% endif %}
-            
+
             {% if paper.UKSPNg %}
               <a class="button" href="{{ paper.UKSPNg | prepend: site.baseurl }}" target="_blank">UKSP Nugget</a>
             {% endif %}
@@ -127,11 +132,11 @@ title: Home
             {% if paper.blogpost %}
               <a class="button" href="{{ paper.blogpost | prepend: site.baseurl }}" target="_blank">Blog post</a>
             {% endif %}
-            
+
             {% if paper.pressrel %}
               <a class="button" href="{{ paper.pressrel | prepend: site.baseurl }}" target="_blank">Press Coverage</a>
             {% endif %}
-            
+
             {% if paper.video %}
               <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
             {% endif %}
@@ -139,7 +144,7 @@ title: Home
             {% if paper.notebook %}
               <a class="button" href="{{ paper.notebook }}" target="_blank">Python Notebook</a>
             {% endif %}
-             
+
             {% if paper.data %}
               <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
             {% endif %}
@@ -151,7 +156,7 @@ title: Home
 </div>
 
 <!-- ========== PROJECTS ========== -->
-<!-- 
+<!--
 <div class="docs-section" id="projects">
   <h4>Projects</h4>
 
@@ -227,7 +232,7 @@ title: Home
  -->
 <!-- ========== reusme ========== -->
 <div class="docs-section" id="resume">
-  <h4>Résumé</h4> 
+  <h4>Résumé</h4>
     <p>One page résumé is available <a href="http://bit.ly/ResWright" target="_blank">here</a>.</p>
 
   <!-- The Timeline -->
