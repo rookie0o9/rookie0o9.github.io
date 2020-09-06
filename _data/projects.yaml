@@ -1,55 +1,44 @@
 projects:
 
-  - title: "NASA FDL 2020"
-    subtitle: "..."
-    thumbnail: "assets/projects/2020_FDL/non_specific_patch.png"
-    url: "https://www.frontierdevelopmentlab.org"
-    selected: y   
 
-  - title: "Space Robotics Challenge"
-    subtitle: "Phase 2"
-    thumbnail: "assets/projects/2020_SRC2/src-phase-2-logo-final.png"
-    url: "https://www.nasa.gov/solve/space-robotics-challenge-phase-2"
-    selected: y   
-
-  - title: "Science Advances"
-    subtitle: "..."
-    thumbnail: "assets/projects/2019_SA/aaw6548_Figure_fig2_seq2_v1.png"
-    #url: "projects/2016_network-ab-testing.html"
+  - #title: "Frontier Development Lab 2019"
+    #subtitle: "Super-resolution of Solar Magnetic Field Images"
+    thumbnail: "assets/projects/2019_FDL/share-twitter.jpg"
+    url: "/projects/2019_FDL"
     selected: y
 
-  - title: "ML Dataset"
-    subtitle: "..."
-    thumbnail: "assets/projects/2019_MLDataset/logo.jpeg"
-    url: "https://github.com/SDOML/SDOML"
-    selected: y
+  #- title: "Science Advances"
+    #subtitle: "..."
+    #thumbnail: "assets/projects/2019_SA/aaw6548_Figure_fig2_seq2_v1.png"
+    ##url: "projects/2016_network-ab-testing.html"
+    #selected: y
 
-  - title: "Super-resolution of Solar Magnetic Field Images"
-    thumbnail: "assets/projects/2019_FDL/MDI_HMI_Scaled.png"
-    #url: "projects/2016_network-ab-testing.html"
-    selected: y
+  #- title: "ML Dataset"
+    #subtitle: "..."
+    #thumbnail: "assets/projects/2019_ML/data.png"
+    #url: "https://github.com/SDOML/SDOML"
+    #selected: y
 
+  #- title: "NASA FDL 2019"
+    #subtitle: "Super-resolution of Solar Magnetic Field Images"
+    #thumbnail: "assets/projects/2019_FDL/LWS_logo.png"
+    #url: "projects/2016_network-ab-testing.html"
+    #selected: y
 
-  - title: "NASA FDL 2019"
-    subtitle: "Super-resolution of Solar Magnetic Field Images"
-    thumbnail: "assets/projects/2019_FDL/LWS_logo.png"
+  #- title: "DeepEM"
+    #subtitle: "Deep Learning approach to DEM Inversion"
+    #thumbnail: "assets/projects/2018_deepem/deepem.png"
     #url: "projects/2016_network-ab-testing.html"
-    selected: y
+    #selected: y
 
-  - title: "DeepEM"
-    subtitle: "Deep Learning approach to DEM Inversion"
-    thumbnail: "assets/projects/2018_deepem/deepem.png"
+  #- title: "NASA FDL 2018"
+    #subtitle: "Frontier Development Lab 2018"
+    #thumbnail: "assets/projects/2018_FDL/SW_badge.png"
     #url: "projects/2016_network-ab-testing.html"
-    selected: y
-    
-  - title: "NASA FDL 2018"
-    subtitle: "Frontier Development Lab 2018"
-    thumbnail: "assets/projects/2018_FDL/SW_badge.png"
-    #url: "projects/2016_network-ab-testing.html"
-    selected: y    
-    
-  - title: "<i>NuSTAR</i> Solar Campaign"
-    subtitle: "First <i>NuSTAR</i> Microflare"
-    thumbnail: "assets/projects/2015_nustarimage/thumbnail.jpg"
-    #url: "projects/2016_network-ab-testing.html"
-    selected: y
+    #selected: y
+
+  #- title: "<i>NuSTAR</i> Solar Campaign"
+    #subtitle: "First <i>NuSTAR</i> Microflare"
+    #thumbnail: "assets/projects/2015_nustarimage/thumbnail.jpg"
+    ##url: "projects/2016_network-ab-testing.html"
+    #selected: y
