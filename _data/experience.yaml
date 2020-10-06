@@ -1,14 +1,8 @@
 experiences:
 
-- place: "Orion (AI) Labs"
-  time: "Dec '19 - now"
-  title: "Team Member"
-  subtitle: "NASA Space Robotics Challenge"
-  category: "work"
-
-- place: "NASA FDL 2019"
+- place: "NASA Frontier Development Lab"
   time: "May '19 - now"
-  title: "Heliophysics Mentor"
+  title: "Core Mentor / Team Lead"
   subtitle: "Super-resolution Magnetograms"
   category: "work"
   
@@ -24,15 +18,9 @@ experiences:
   subtitle: "Physics & Astrophysics" #<br/> Thesis title: The energetics of small solar flares and brightenings"
   category: "school"
   
-- place: "Smithsonian Institution"
-  time: "Jan - Mar '19"
-  title: "Visiting Scientist"
-  subtitle: "Center for Astrophysics | Harvard & Smithsonian"
-  category: "work"
-  
-- place: "NASA FDL 2018"
+- place: "NASA Frontier Development Lab"
   time: "Jun - Aug '18"
-  title: "Heliophysics Researcher"
+  title: "Machine Learning Researcher (Intern)"
   subtitle: "Space Weather Team"
   category: "work"
 
@@ -51,5 +39,5 @@ experiences:
 - place: "University of Southampton"
   time: "Oct '10 - Jul '14"
   title: "MPhys Student"
-  subtitle: "Physics & Astrophysics with a Year Abroad <br/> First Class Honours"
+  subtitle: "Physics & Astrophysics with a Year Abroad <br/> First Class Honours (US GPA: 3.92/4.0)"
   category: "school"

@@ -1,5 +1,25 @@
 papers:
 
+  - title: "Guiding Heliophysics Toward an Enhanced Transdisciplinary Framework"
+    authors: "Jenny L. Verniero, James Juno, V . M. Sadykov, <b>Paul J. Wright</b>, Sam J. Schonfeld, Ben L. Alterman"
+    venue: "Heliophysics 2050 Workshop, 2020"
+    workshop_website: "https://www.hou.usra.edu/meetings/helio2050/"
+    selected: y
+
+  - title: "Toward A Sustainable Software Development Model for Heliophysics"
+    authors: "Will T. Barnes, James Juno, Jeffrey W. Reep, Jack Ireland, <b>Paul J. Wright</b>, Sarah A. Spitzer, B. L. Alterman, David Stansby, Emily Lichko"
+    venue: "Heliophysics 2050 Workshop, 2020"
+    workshop_website: "https://www.hou.usra.edu/meetings/helio2050/"
+    selected: y
+
+  - title: "Science Platforms for Heliophysics Data Analysis"
+    authors: "Monica G. Bobra, Will T. Barnes, Mark C. M. Cheung, Laura A. Hayes, Jack Ireland, Miho Janvier, Michael Kirk, James P. Mason, Stuart J. Mumford, <b>Paul J. Wright</b>"
+    venue: "Heliophysics 2050 Workshop, 2020"
+    preprint: "https://zenodo.org/record/4025217"
+    workshop_website: "https://www.hou.usra.edu/meetings/helio2050/"
+    selected: y
+
+
   - title: "Single-Frame Super-Resolution of Solar Magnetograms: Investigating Physics-Based Metrics & Losses"
     authors: "Anna Jungbluth<sup>†</sup>, Xavier Gitiaux<sup>†</sup>, Shane Maloney<sup>†</sup>, Carl Shneider<sup>†</sup>, <b>Paul J. Wright</b>, Alfredo Kalaitzis, Michel Deudon, Atılım Güneş Baydin, Yarin Gal, Andrés Muñoz-Jaramillo"
     venue: "In Second Workshop on Machine Learning and the Physical Sciences (NeurIPS 2019), Vancouver, Canada"
