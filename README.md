@@ -1,7 +1,7 @@
-# pauljwright.github.io
+# rookie0o9
 Personal website
 
-https://identity.stanford.edu/color.html
+https://fixam.co.uk
 
 
 Run your Jekyll site locally:
