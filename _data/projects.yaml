@@ -4,7 +4,7 @@ projects:
   - #title: "Frontier Development Lab 2019"
     #subtitle: "Super-resolution of Solar Magnetic Field Images"
     thumbnail: "assets/projects/2019_FDL/share-twitter.jpg"
-    # url: "/projects/2019_FDL"
+    url: "/libs/index.html"
     selected: y
 
   #- title: "Science Advances"
