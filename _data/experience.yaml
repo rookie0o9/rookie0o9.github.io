@@ -1,17 +1,17 @@
 experiences:
   - place: "The University of Sunderland"
-    time: "Aug '22 - present"
+    time: "Aug '22 - June '24"
     title: "Applied Cybersecurity"
     category: "Education"
 
   - place: "Cyblack Org"
     time: "Aug '23 - December '23"
-    title: "IT Security Intern"
-    category: "Training"
+    title: "IT Security Engineer"
+    category: "Freelance"
     
-  - place: "Barclays - Part Time"
+  - place: "Barclays"
     time: "June '22 - Aug '23"
-    title: "IT Support"
+    title: "IT Support Engineer"
     category: "Professional"
     
   - place: "The Cambridge Educational Group"
@@ -27,14 +27,14 @@ experiences:
   - place: "GoMyCode"
     time: "Jan '19 - Aug '19"
     title: "Software Apprenticeship"
-    category: "Web Dev Training"
+    category: "Programming Training"
 
   - place: "Lekki Concession Company"
     time: "May '18 - Dec '21"
     title: "IT Services & Consultation"
     category: "Professional"
 
-  - place: "Wuamok Global"
+  - place: "Wuamok Global/Skylark Labs"
     time: "Jan '16 - May '18"
     title: "IT System Support"
     subtitle: " Administrator "
@@ -51,8 +51,8 @@ experiences:
     subtitle: "Youth Corp <br> NYSC"
     category: "Education"
 
-  - place: "Yaba College of Technology"
+  - place: "University of Lagos"
     time: "Oct '10 - Jul '14"
-    title: "Business Technology"
+    title: "Computer Science"
     subtitle: "<br/> First Class (US GPA: 3.48/4.0)"
     category: "Education"
