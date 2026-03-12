@@ -1,6 +1,11 @@
 ---
 layout: project
 title: Using Deep Learning to Monitor the Sun’s Ultraviolet Emission
+status: legacy
+build_status: archived
+category_label: Legacy Research
+date: 2019-10-02
+stack: Deep Learning, Solar Observation Data, EUV Prediction
 ---
 
 **This is slightly modified from the original press-release by the SETI Institute on October 2, 2019** ([see the press coverage here](https://www.seti.org/press-release/nasa-frontier-development-lab-uses-deep-learning-monitor-suns-ultraviolet-emission)).

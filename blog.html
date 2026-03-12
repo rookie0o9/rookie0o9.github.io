@@ -1,24 +1,70 @@
 ---
 layout: default
-title: Blog
-description: Personal blog entries and project-linked articles by Adeniyi A. Azeez.
+title: Logs
+nav: logs
+description: "Archive terminal for incident-response notes, operations logs, repair notes, and lab observations."
 ---
-<section class="page-hero section">
-  <p class="eyebrow">Blog</p>
-  <h1>Personal Blog Archive</h1>
-  <p>A curated list of posts and technical notes from my ongoing journey in engineering and security.</p>
+<section class="page-head panel section">
+  <p class="hero-eyebrow">LOG ARCHIVE // TERMINAL VIEW</p>
+  <h1 class="page-title">Logs</h1>
+  <p>Incident response notes, operations write-ups, repair diagnostics, and short field observations.</p>
+  <div class="filter-bar" id="log-filters">
+    <button class="filter-btn active" type="button" data-filter="all">all</button>
+    <button class="filter-btn" type="button" data-filter="security">security</button>
+    <button class="filter-btn" type="button" data-filter="ops">ops</button>
+    <button class="filter-btn" type="button" data-filter="repair">repair</button>
+    <button class="filter-btn" type="button" data-filter="labs">labs</button>
+    <button class="filter-btn" type="button" data-filter="notes">notes</button>
+  </div>
 </section>
 
-<section class="section">
-  <div class="list">
-    {% for entry in site.data.blog.blog %}
-      <article class="list-item">
-        <p class="meta">{{ entry.date }}</p>
-        <h2><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h2>
-        {% if entry.subtitle %}
-          <p class="muted">{{ entry.subtitle }}</p>
-        {% endif %}
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">archive index</h2>
+    <a class="terminal-link" href="{{ '/archive.html' | relative_url }}">open legacy archive &gt;</a>
+  </div>
+  <div class="log-list" id="log-list">
+    {% for log in site.data.logs.logs %}
+      <article class="log-item" id="{{ log.id }}" data-category="{{ log.category }}">
+        <p class="log-meta">[{{ log.date }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
+        <h3>{{ log.title }}</h3>
+        <p>{{ log.summary }}</p>
+        <div class="tag-row">
+          <span class="tag">{{ log.category }}</span>
+          {% for tag in log.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
       </article>
     {% endfor %}
   </div>
 </section>
+
+<script>
+  (function () {
+    var filters = document.querySelectorAll('#log-filters .filter-btn');
+    var items = document.querySelectorAll('#log-list .log-item');
+
+    function applyFilter(value) {
+      for (var i = 0; i < items.length; i += 1) {
+        var item = items[i];
+        if (value === 'all' || item.getAttribute('data-category') === value) {
+          item.classList.remove('is-hidden');
+        } else {
+          item.classList.add('is-hidden');
+        }
+      }
+    }
+
+    for (var i = 0; i < filters.length; i += 1) {
+      filters[i].addEventListener('click', function (event) {
+        for (var j = 0; j < filters.length; j += 1) {
+          filters[j].classList.remove('active');
+        }
+        var button = event.currentTarget;
+        button.classList.add('active');
+        applyFilter(button.getAttribute('data-filter'));
+      });
+    }
+  })();
+</script>

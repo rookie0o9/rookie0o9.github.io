@@ -1,85 +1,137 @@
 ---
 layout: default
-title: Home
-description: Personal site of Adeniyi A. Azeez focused on cybersecurity, infrastructure, and development projects.
+title: Console
+nav: console
+description: "FIXAM Lab Notes: security, systems, repair logs, and field notes from active engineering work."
 ---
-<section class="hero section">
-  <div>
-    <p class="eyebrow">Personal Blog · London</p>
-    <h1>Building secure systems and documenting lessons from real projects.</h1>
+<section class="hero-console section">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">FIXAM // LAB NOTES // LONDON NODE</p>
+    <h1 class="hero-title">Building secure systems, fixing strange failures, and documenting what the logs do not say.<span class="cursor"></span></h1>
     <p class="hero-copy">
-      I am Ade, a support and infrastructure engineer transitioning deeper into incident response and security operations.
-      This site is my personal space to share practical write-ups, development experiments, and project retrospectives.
+      I work across support, infrastructure, identity, and security operations. This site is my running notebook for incident lessons,
+      repair logs, system experiments, and practical engineering write-ups.
     </p>
-    <div class="btn-group">
-      <a class="btn btn-primary" href="{{ '/projects.html' | relative_url }}">Personal Development Projects</a>
-      <a class="btn btn-ghost" href="{{ '/blog.html' | relative_url }}">Read the Blog</a>
+    <div class="command-row">
+      <a class="cmd-btn" href="{{ '/blog.html' | relative_url }}">&gt; read latest logs</a>
+      <a class="cmd-btn" href="{{ '/projects.html' | relative_url }}">&gt; inspect builds</a>
     </div>
-    <div class="quick-info">
-      <span>Microsoft 365 Security</span>
-      <span>Incident Response</span>
-      <span>Automation + Documentation</span>
+    <div class="status-row">
+      <span class="status-chip">Identity / Endpoint / Ops</span>
+      <span class="status-chip">Incident Response In Progress</span>
+      <span class="status-chip">Learning In Public</span>
     </div>
   </div>
-  <div class="hero-photo">
-    <img src="{{ site.data.main_info.profile_pic | relative_url }}" alt="Portrait of {{ site.data.main_info.name }}">
+
+  <aside class="terminal-card">
+    <h3>system status</h3>
+    <div class="terminal-lines">
+      <p><span class="ok">[ok]</span> node: london-uk</p>
+      <p><span class="ok">[ok]</span> profile: infrastructure + security operations</p>
+      <p><span class="warn">[watch]</span> current focus: m365 incident process hardening</p>
+      <p><span class="ok">[ok]</span> documentation mode: enabled</p>
+      <p><span class="ok">[ok]</span> public notes: active</p>
+    </div>
+  </aside>
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">current focus</h2>
+  </div>
+  <div class="focus-grid">
+    <article class="focus-card">
+      <p class="card-kicker">Security Engineering</p>
+      <h3>Identity + Endpoint</h3>
+      <p>Practical hardening with MFA, conditional access, device policy, and detection-minded admin controls.</p>
+    </article>
+    <article class="focus-card">
+      <p class="card-kicker">Operations + Response</p>
+      <h3>Workflow Reliability</h3>
+      <p>Turning recurring issues into cleaner workflows, faster triage, and repeatable playbooks.</p>
+    </article>
+    <article class="focus-card">
+      <p class="card-kicker">Repair + Analysis</p>
+      <h3>Fault Logic</h3>
+      <p>Field notes on device failures, odd behaviour, and the engineering logic behind fixing them.</p>
+    </article>
   </div>
 </section>
 
-<section class="section">
+<section class="section panel">
   <div class="section-head">
-    <h2>Focus Areas</h2>
+    <h2 class="section-title">latest logs</h2>
+    <a class="terminal-link" href="{{ '/blog.html' | relative_url }}">open archive &gt;</a>
   </div>
-  <div class="grid-3">
-    <article class="card">
-      <p class="meta">Security Engineering</p>
-      <h3>Identity and endpoint hardening</h3>
-      <p>Designing practical controls with MFA, conditional access, and endpoint policy baselines.</p>
-    </article>
-    <article class="card">
-      <p class="meta">Operations</p>
-      <h3>Incident handling workflows</h3>
-      <p>Turning one-off investigations into repeatable playbooks and faster response routines.</p>
-    </article>
-    <article class="card">
-      <p class="meta">Personal Growth</p>
-      <h3>Learning in public</h3>
-      <p>Publishing concise notes on wins, mistakes, and experiments that improved my engineering process.</p>
-    </article>
+  <div class="log-grid">
+    {% for log in site.data.logs.logs limit:4 %}
+      <article class="log-card">
+        <p class="log-meta">[{{ log.date }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
+        <h3><a href="{{ '/blog.html' | relative_url }}#{{ log.id }}">{{ log.title }}</a></h3>
+        <p>{{ log.summary }}</p>
+      </article>
+    {% endfor %}
   </div>
 </section>
 
-<section class="section">
+<section class="section panel">
   <div class="section-head">
-    <h2>Featured Project Notes</h2>
-    <a class="section-link" href="{{ '/projects.html' | relative_url }}">View all projects</a>
+    <h2 class="section-title">active builds</h2>
+    <a class="terminal-link" href="{{ '/projects.html' | relative_url }}">inspect all builds &gt;</a>
   </div>
-  <div class="grid-3">
-    {% assign featured_projects = site.projects | sort: 'path' | reverse %}
-    {% for project in featured_projects limit:3 %}
-      <article class="card">
-        <p class="meta">Project</p>
+  <div class="build-grid">
+    {% assign active_builds = site.projects | where: "status", "active" | sort: "date" | reverse %}
+    {% for project in active_builds limit:3 %}
+      <article class="build-card">
+        <div class="list-meta">
+          <p class="card-kicker">{{ project.category_label | default: "Lab Build" }}</p>
+          {% assign project_state = project.build_status | default: "active" %}
+          <span class="status-badge {% if project_state == 'active' %}active{% elsif project_state == 'in-progress' %}progress{% elsif project_state == 'planned' %}planned{% else %}error{% endif %}">{{ project_state }}</span>
+        </div>
         <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        {% if project.subtitle %}
-          <p class="muted">{{ project.subtitle }}</p>
+        <p>{{ project.objective }}</p>
+        {% if project.stack %}
+          <p class="build-meta">stack: {{ project.stack }}</p>
         {% endif %}
-        <p>{{ project.excerpt | strip_html | truncate: 160 }}</p>
       </article>
     {% endfor %}
   </div>
 </section>
 
-<section class="section">
+<section class="section panel">
   <div class="section-head">
-    <h2>Recent Blog Entries</h2>
-    <a class="section-link" href="{{ '/blog.html' | relative_url }}">Open blog archive</a>
+    <h2 class="section-title">field notes</h2>
   </div>
-  <div class="list">
-    {% for entry in site.data.blog.blog limit:4 %}
-      <article class="list-item">
-        <p class="meta">{{ entry.date }}</p>
-        <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+  <div class="field-grid">
+    {% for note in site.data.field_notes.notes limit:4 %}
+      <article class="field-card">
+        <p class="card-kicker">{{ note.type }}</p>
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.lesson }}</p>
+        <div class="command-block">$ {{ note.command }}</div>
       </article>
     {% endfor %}
+  </div>
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">operator profile</h2>
+    <a class="terminal-link" href="{{ '/operator.html' | relative_url }}">view operator profile &gt;</a>
+  </div>
+  <div class="operator-grid">
+    <article class="operator-card">
+      <h3>{{ site.data.main_info.name }}</h3>
+      <p>I am an infrastructure and support engineer moving deeper into security operations and systems work.</p>
+      <p class="operator-meta">Focus: incident response, identity security, endpoint operations, and repair diagnostics.</p>
+    </article>
+    <article class="operator-card">
+      <h3>why this site exists</h3>
+      <p>I write things down because memory is unreliable and systems lie. This is where incidents and fixes become repeatable knowledge.</p>
+    </article>
+    <article class="operator-card">
+      <h3>current direction</h3>
+      <p>Building practical detection and response workflows that are fast under pressure and easy to run as a team.</p>
+    </article>
   </div>
 </section>

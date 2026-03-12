@@ -2,6 +2,11 @@
 layout: project
 title: Machine Learning Data Set for NASA's Solar Dynamics Observatory
 subtitle: SDO/AIA, SDO/HMI, and SDO/EVE
+status: legacy
+build_status: archived
+category_label: Legacy Research
+date: 2019-04-01
+stack: NASA SDO Data Pipeline, Curation Workflows
 ---
 [Galvez *et al* 2019 *ApJS* **242** 7](https://arxiv.org/abs/1903.04538)
 

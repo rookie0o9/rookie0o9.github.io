@@ -2,13 +2,20 @@
 layout: default
 ---
 <article class="prose section">
-  <header class="article-header">
-    <p class="meta">Project Note</p>
+  <header>
+    <p class="log-meta">[project-note] [{{ page.status | default: "active" }}]</p>
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}
-      <p class="lead">{{ page.subtitle }}</p>
+      <p>{{ page.subtitle }}</p>
+    {% endif %}
+    {% if page.stack %}
+      <p class="operator-meta">stack: {{ page.stack }}</p>
     {% endif %}
   </header>
+
+  {% if page.status == "legacy" %}
+    <p class="notice-legacy">Legacy archive entry: this write-up is retained for reference and is not part of the current security/operations feed.</p>
+  {% endif %}
 
   {{ content }}
 </article>

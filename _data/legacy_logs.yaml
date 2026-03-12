@@ -1,0 +1,15 @@
+logs:
+  - date: "2019-10"
+    title: "Using Deep Learning to Monitor the Sun's Ultraviolet Emission"
+    summary: "Research note from the NASA Frontier Development Lab period."
+    url: "/projects/2019_ScienceAdvances"
+
+  - date: "2019-04"
+    title: "Machine Learning Data Set for NASA's Solar Dynamics Observatory"
+    summary: "Dataset publication note from earlier research work."
+    url: "/projects/2019_MLDataset"
+
+  - date: "2019-04"
+    title: "DeepEM: A Deep Learning Approach for DEM Inversion"
+    summary: "Legacy archive entry from prior deep learning research."
+    url: "/projects/2018_DeepEM"

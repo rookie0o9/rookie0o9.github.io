@@ -1,26 +1,36 @@
 ---
 layout: default
-title: Projects
-description: Personal development and research projects by Adeniyi A. Azeez.
+title: Builds
+nav: builds
+description: "Active engineering builds across incident response automation, infrastructure, and access control labs."
 ---
-<section class="page-hero section">
-  <p class="eyebrow">Projects</p>
-  <h1>Personal Development Projects</h1>
-  <p>Hands-on project notes covering machine learning, cybersecurity, and tooling experiments.</p>
+<section class="page-head panel section">
+  <p class="hero-eyebrow">ACTIVE BUILDS // LAB TRACKER</p>
+  <h1 class="page-title">Builds</h1>
+  <p>Current engineering builds with objectives, stack decisions, and next iteration notes.</p>
 </section>
 
-<section class="section">
-  <div class="grid-2">
-    {% assign all_projects = site.projects | sort: 'path' | reverse %}
-    {% for project in all_projects %}
-      <article class="card">
-        <p class="meta">Project write-up</p>
-        <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-        {% if project.subtitle %}
-          <p class="muted">{{ project.subtitle }}</p>
-        {% endif %}
-        <p>{{ project.excerpt | strip_html | truncate: 200 }}</p>
-        <a class="text-link" href="{{ project.url | relative_url }}">Read project details</a>
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">active builds</h2>
+    <a class="terminal-link" href="{{ '/archive.html' | relative_url }}">open legacy builds &gt;</a>
+  </div>
+  <div class="build-grid">
+    {% assign active_builds = site.projects | where: "status", "active" | sort: "date" | reverse %}
+    {% for project in active_builds %}
+      <article class="build-card">
+        <div class="list-meta">
+          <p class="card-kicker">{{ project.category_label | default: "Lab Build" }}</p>
+          {% assign project_state = project.build_status | default: "active" %}
+          <span class="status-badge {% if project_state == 'active' %}active{% elsif project_state == 'in-progress' %}progress{% elsif project_state == 'planned' %}planned{% else %}error{% endif %}">{{ project_state }}</span>
+        </div>
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p>{{ project.objective }}</p>
+        <p class="build-meta">stack: {{ project.stack }}</p>
+        <p><strong>why it mattered:</strong> {{ project.why }}</p>
+        <p><strong>key decision:</strong> {{ project.key_decision }}</p>
+        <p><strong>result:</strong> {{ project.result }}</p>
+        <p><strong>next:</strong> {{ project.next_iteration }}</p>
       </article>
     {% endfor %}
   </div>

@@ -2,6 +2,11 @@
 layout: project
 title: DeepEM
 subtitle: A Deep Learning Approach for DEM Inversion 
+status: legacy
+build_status: archived
+category_label: Legacy Research
+date: 2019-04-01
+stack: PyTorch, SDO/AIA Data, DEM Inversion
 ---
 
 [![DOI](https://zenodo.org/badge/155842845.svg)](https://zenodo.org/badge/latestdoi/155842845)
@@ -28,4 +33,3 @@ This notebook was developed with [PyTorch](https://pytorch.org/), and is availab
 ----
 
 <i>This project was initiated during the 2018 NASA Frontier Development Lab (FDL) program, a partnership between NASA, SETI, NVIDIA Corporation, Lockheed Martin, and Kx. We gratefully thank our mentors for guidance and useful discussion, as well as the SETI Institute for their hospitality.</i>
-

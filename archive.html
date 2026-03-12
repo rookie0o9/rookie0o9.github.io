@@ -1,0 +1,48 @@
+---
+layout: default
+title: Archive
+nav: archive
+description: "Archive index for legacy logs, builds, and historical entries."
+---
+<section class="page-head panel section">
+  <p class="hero-eyebrow">ARCHIVE INDEX</p>
+  <h1 class="page-title">Archive</h1>
+  <p>Historical and legacy entries kept for reference. Active security and operations content lives in Logs and Builds.</p>
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">legacy logs</h2>
+  </div>
+  <div class="log-list">
+    {% for item in site.data.legacy_logs.logs %}
+      <article class="log-item">
+        <p class="log-meta">[{{ item.date }}] [legacy-research]</p>
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        <p>{{ item.summary }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">legacy builds</h2>
+  </div>
+  <div class="build-grid">
+    {% assign legacy_projects = site.projects | where: "status", "legacy" | sort: "date" | reverse %}
+    {% for project in legacy_projects %}
+      <article class="build-card">
+        <div class="list-meta">
+          <p class="card-kicker">Legacy Build</p>
+          <span class="status-badge planned">archived</span>
+        </div>
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        {% if project.subtitle %}
+          <p>{{ project.subtitle }}</p>
+        {% endif %}
+        <p class="build-meta">archive note: retained as historical research context, not part of current security/ops feed.</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
