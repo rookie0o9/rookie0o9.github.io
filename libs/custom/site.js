@@ -1,4 +1,7 @@
 (function () {
+  var PRODUCTION_HOST = "blog.fixam.co.uk";
+  var VISIT_SESSION_KEY = "fixam-visit-notified";
+
   function initMenu() {
     var button = document.querySelector(".menu-toggle");
     var nav = document.getElementById("site-nav");
@@ -66,7 +69,67 @@
     window.gtag("config", trackingId);
   }
 
+  function initVisitNotifications() {
+    if (window.location.hostname !== PRODUCTION_HOST) {
+      return;
+    }
+
+    if (window.top !== window.self) {
+      return;
+    }
+
+    try {
+      if (window.sessionStorage.getItem(VISIT_SESSION_KEY) === "1") {
+        return;
+      }
+    } catch (error) {
+      // Continue without session storage if the browser blocks it.
+    }
+
+    if (navigator.webdriver) {
+      return;
+    }
+
+    var payload = JSON.stringify({
+      path: window.location.pathname + window.location.search,
+      title: document.title,
+      referrer: document.referrer,
+      visitedAt: new Date().toISOString()
+    });
+
+    function markSent() {
+      try {
+        window.sessionStorage.setItem(VISIT_SESSION_KEY, "1");
+      } catch (error) {
+        // Ignore storage failures.
+      }
+    }
+
+    if (navigator.sendBeacon) {
+      try {
+        var blob = new Blob([payload], { type: "application/json" });
+        if (navigator.sendBeacon("/.netlify/functions/visit-telegram", blob)) {
+          markSent();
+          return;
+        }
+      } catch (error) {
+        // Fall through to fetch.
+      }
+    }
+
+    window.fetch("/.netlify/functions/visit-telegram", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: payload,
+      keepalive: true,
+      credentials: "same-origin"
+    }).then(markSent).catch(function () {
+      // Ignore network failures; this should never block page use.
+    });
+  }
+
   initMenu();
   initLogFilters();
   initAnalytics();
+  initVisitNotifications();
 })();

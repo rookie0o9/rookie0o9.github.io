@@ -6,6 +6,9 @@
   RUBY_VERSION = "3.3.10"
   BUNDLER_VERSION = "2.4.22"
 
+[functions]
+  directory = "netlify/functions"
+
 [[headers]]
   for = "/*"
 
