@@ -1,24 +1,12 @@
 blog:
-  
-- title: "Using Deep Learning to Monitor the Sun’s Ultraviolet Emission"
-  date: "10/2019"
-  url: "/projects/2019_ScienceAdvances"
+  - title: "Using Deep Learning to Monitor the Sun's Ultraviolet Emission"
+    date: "October 2019"
+    url: "/projects/2019_ScienceAdvances"
 
-- title: "ML Dataset Prepared From the NASA SDO Mission"
-  date: "04/2019"
-  url: "/projects/2019_MLDataset"
-  
-- title: "DeepEM: A Deep Learning Approach to DEM Inversion"
-  #subtitle: "A Deep Learning Approach to DEM Inversion"
-  date: "04/2019"
-  url: "/projects/2018_DeepEM"
+  - title: "Machine Learning Data Set for NASA's Solar Dynamics Observatory"
+    date: "April 2019"
+    url: "/projects/2019_MLDataset"
 
-- title: "AAS/SPD Poster Prize 2017"
-  #subtitle: "A life of constant travel"
-  date: "</br>" #date: "04/2019"
-  url: "/projects/2017_SPDPosterPrize"
-  
-- title: "The First NuSTAR Microflare"
-  #subtitle: "A life of constant travel"
-  date: "</br>" #date: "04/2019"
-  url: "/projects/2017_NuSTARMicroflare"
+  - title: "DeepEM: A Deep Learning Approach for DEM Inversion"
+    date: "April 2019"
+    url: "/projects/2018_DeepEM"

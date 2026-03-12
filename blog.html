@@ -1,19 +1,24 @@
 ---
-layout: blog
+layout: default
 title: Blog
+description: Personal blog entries and project-linked articles by Adeniyi A. Azeez.
 ---
+<section class="page-hero section">
+  <p class="eyebrow">Blog</p>
+  <h1>Personal Blog Archive</h1>
+  <p>A curated list of posts and technical notes from my ongoing journey in engineering and security.</p>
+</section>
 
-<!-- ========== BLOG ========== -->
-<div class="docs-section" id="bio">
-  <h4>Blog Posts</h4>
-  
-  <ul>
-    {% for nw in site.data.blog.blog %}
-    <!-- <b>{{ nw.date }}</b> | {{ nw.title }}: <i>{{ nw.subtitle }}</i>
-    <div class="paper"><b>{{ nw.date }}</b> <a href="{{ nw.url | prepend: site.baseurl }}" target="_blank">{{ nw.title }}</a> {{ nw.subtitle }}</div> -->    
-    <div class="row"><div class="twop columns"><b>{{ nw.date }}</b></div> <div class="ten columns"><a href="{{ nw.url | prepend: site.baseurl }}">{{ nw.title }} <i>{{ nw.subtitle }}</a></i></div></div>
+<section class="section">
+  <div class="list">
+    {% for entry in site.data.blog.blog %}
+      <article class="list-item">
+        <p class="meta">{{ entry.date }}</p>
+        <h2><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h2>
+        {% if entry.subtitle %}
+          <p class="muted">{{ entry.subtitle }}</p>
+        {% endif %}
+      </article>
     {% endfor %}
-  </ul>
-    
-</div>
-
+  </div>
+</section>

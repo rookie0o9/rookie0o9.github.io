@@ -1,9 +1,12 @@
-# rookie0o9
-Personal website
+# rookie0o9.github.io
 
-https://fixam.co.uk
+Personal blog and project portfolio for https://fixam.co.uk.
 
+## Local development
 
-Run your Jekyll site locally:
-  ```
-  $ bundle exec jekyll serve
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open `http://127.0.0.1:4000`.

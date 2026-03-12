@@ -1,128 +1,85 @@
 ---
 layout: default
 title: Home
+description: Personal site of Adeniyi A. Azeez focused on cybersecurity, infrastructure, and development projects.
 ---
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4>BIO</h4>
-  <p>Welcome to my blog! Here you’ll find a blend of professional insights, personal reflections, and the projects I’m most excited about.</p>
-
-  <p><strong>Background & Interests:</strong> I’m Ade, based in London, UK, and I was raised in a family where a mix of cultures, faiths and  perspectives shaped my curiosity about the wider world. That love of diversity still drives me today, whether I’m exploring markets in Egypt or relaxing on the beaches of the Benin Republic. Outside of work, you’ll often find me reading (I’m currently diving into <em>Mastery</em> by Robert Greene), capturing everyday moments through photography or experimenting with new recipes in the kitchen. These hobbies give me space to recharge and spark creativity.</p>
-
-  <p><strong>Professional Journey:</strong> I’m a 2nd Line Support Engineer transitioning into Incident Response with a Master’s in Applied Cybersecurity. Over the last decade I’ve built and secured Microsoft 365 environments, migrated organisations from third‑party platforms to Exchange Online and SharePoint Online, rolled out Intune/Autopilot and modern device management, and implemented MFA and Conditional Access to harden user identities. I’ve also triaged and contained threats using Microsoft 365 Defender, applying KQL and audit log analysis to isolate compromised accounts and devices. I value clear communication, strong documentation and collaboration, and I enjoy turning one‑off fixes into repeatable solutions through runbooks and knowledge bases.</p>
-
-  <p>I’m always looking for new opportunities to blend technical excellence with a human touch and to help teams deliver secure, resilient IT services. Feel free to browse my <a href="./projects.html">projects</a> to see what I’m currently working on, and thanks for stopping by!<span style="color:#44a340;">p</span><span style="color:#3f9b3c;">r</span><span style="color:#399238;">o</span><span style="color:#348a34;">j</span><span style="color:#2e812f;">e</span><span style="color:#29792b;">c</span><span style="color:#237027;">t</span><span style="color:#1e6823;">s</span></a></p>
-<!--   <p>On this blog, I'll be sharing my experiences and insights on these topics and more.</p>  -->
-
-  <div class="project-image-container">
-    <a href="https://cloud.withgoogle.com/intel/">
-      <img src="assets/projects/2019_FDL/webpage_sun.jpg" class="u-max-full-width" />
-    </a>
+<section class="hero section">
+  <div>
+    <p class="eyebrow">Personal Blog · London</p>
+    <h1>Building secure systems and documenting lessons from real projects.</h1>
+    <p class="hero-copy">
+      I am Ade, a support and infrastructure engineer transitioning deeper into incident response and security operations.
+      This site is my personal space to share practical write-ups, development experiments, and project retrospectives.
+    </p>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="{{ '/projects.html' | relative_url }}">Personal Development Projects</a>
+      <a class="btn btn-ghost" href="{{ '/blog.html' | relative_url }}">Read the Blog</a>
+    </div>
+    <div class="quick-info">
+      <span>Microsoft 365 Security</span>
+      <span>Incident Response</span>
+      <span>Automation + Documentation</span>
+    </div>
   </div>
-</div>
+  <div class="hero-photo">
+    <img src="{{ site.data.main_info.profile_pic | relative_url }}" alt="Portrait of {{ site.data.main_info.name }}">
+  </div>
+</section>
 
-<!-- ========== NEWS ========== -->
-<div class="docs-section" id="news">
-  <h4>News</h4>
+<section class="section">
+  <div class="section-head">
+    <h2>Focus Areas</h2>
+  </div>
+  <div class="grid-3">
+    <article class="card">
+      <p class="meta">Security Engineering</p>
+      <h3>Identity and endpoint hardening</h3>
+      <p>Designing practical controls with MFA, conditional access, and endpoint policy baselines.</p>
+    </article>
+    <article class="card">
+      <p class="meta">Operations</p>
+      <h3>Incident handling workflows</h3>
+      <p>Turning one-off investigations into repeatable playbooks and faster response routines.</p>
+    </article>
+    <article class="card">
+      <p class="meta">Personal Growth</p>
+      <h3>Learning in public</h3>
+      <p>Publishing concise notes on wins, mistakes, and experiments that improved my engineering process.</p>
+    </article>
+  </div>
+</section>
 
-  <ul>
-    {% for nw in site.data.news.news %}
-    <!-- <a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a> -->
-
-    <div class="row"><div class="twop columns"><b>{{ nw.date }}</b></div> <div class="ten columns">{{ nw.title }} <i>{{ nw.subtitle }}</i></div></div>
+<section class="section">
+  <div class="section-head">
+    <h2>Featured Project Notes</h2>
+    <a class="section-link" href="{{ '/projects.html' | relative_url }}">View all projects</a>
+  </div>
+  <div class="grid-3">
+    {% assign featured_projects = site.projects | sort: 'path' | reverse %}
+    {% for project in featured_projects limit:3 %}
+      <article class="card">
+        <p class="meta">Project</p>
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        {% if project.subtitle %}
+          <p class="muted">{{ project.subtitle }}</p>
+        {% endif %}
+        <p>{{ project.excerpt | strip_html | truncate: 160 }}</p>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
+</section>
 
-</div>
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-
-<!--   <p>Complete list of publications on <a href="https://bit.ly/ADSWright" target="_blank">NASA ADS</a>.</p>
- -->
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.preprint %}
-              <a class="button" href="{{ paper.preprint | prepend: site.baseurl }}" target="_blank">Preprint</a>
-            {% endif %}
-
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.workshop_website %}
-              <a class="button" href="{{ paper.workshop_website | prepend: site.baseurl }}" target="_blank">Workshop Website</a>
-            {% endif %}
-
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code | prepend: site.baseurl }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.UKSPNg %}
-              <a class="button" href="{{ paper.UKSPNg | prepend: site.baseurl }}" target="_blank">UKSP Nugget</a>
-            {% endif %}
-
-            {% if paper.blogpost %}
-              <a class="button" href="{{ paper.blogpost | prepend: site.baseurl }}" target="_blank">Blog post</a>
-            {% endif %}
-
-            {% if paper.pressrel %}
-              <a class="button" href="{{ paper.pressrel | prepend: site.baseurl }}" target="_blank">Press Coverage</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.notebook %}
-              <a class="button" href="{{ paper.notebook }}" target="_blank">Python Notebook</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-<!--    </div>
-  </div> -->
-</div>
-
-<!-- ========== reusme ========== -->
-<div class="docs-section" id="resume">
-  <h4>Résumé</h4>
-    <p>One page résumé is available <a href="https://github.com/rookie0o9/rookie0o9.github.io/blob/master/assets/ADENIYI-AZEEZ.pdf" target="_blank">here</a>.</p>
-
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
+<section class="section">
+  <div class="section-head">
+    <h2>Recent Blog Entries</h2>
+    <a class="section-link" href="{{ '/blog.html' | relative_url }}">Open blog archive</a>
+  </div>
+  <div class="list">
+    {% for entry in site.data.blog.blog limit:4 %}
+      <article class="list-item">
+        <p class="meta">{{ entry.date }}</p>
+        <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+      </article>
     {% endfor %}
-  </ul>
-</div>
+  </div>
+</section>

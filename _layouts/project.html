@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-<div class="docs-section">
-
-  {% if page.subtitle == "" or page.subtitle == nil %}
-  	<h3>{{ page.title }}</h3>
-  {% else %}
-    <div class="title-subtitle">
-      <h3>{{ page.title }}</h3>
-      <h5>{{ page.subtitle }}</h5>
-    </div>
-  {% endif %}
+<article class="prose section">
+  <header class="article-header">
+    <p class="meta">Project Note</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="lead">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
 
   {{ content }}
-
-</div>
+</article>

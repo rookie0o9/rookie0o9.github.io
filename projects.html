@@ -1,43 +1,27 @@
 ---
-layout: projects
+layout: default
 title: Projects
+description: Personal development and research projects by Adeniyi A. Azeez.
 ---
+<section class="page-hero section">
+  <p class="eyebrow">Projects</p>
+  <h1>Personal Development Projects</h1>
+  <p>Hands-on project notes covering machine learning, cybersecurity, and tooling experiments.</p>
+</section>
 
-
-<!-- ========== PROJECTS ========== -->
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <p>A collection of projects.</p></br>
-
-    <div class="tab-pane">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:2 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
+<section class="section">
+  <div class="grid-2">
+    {% assign all_projects = site.projects | sort: 'path' | reverse %}
+    {% for project in all_projects %}
+      <article class="card">
+        <p class="meta">Project write-up</p>
+        <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+        {% if project.subtitle %}
+          <p class="muted">{{ project.subtitle }}</p>
         {% endif %}
-
-          <div class="twelve columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <p><h5>{{ project.title }}</h5> {{ project.subtitle }}</p>
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 1 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+        <p>{{ project.excerpt | strip_html | truncate: 200 }}</p>
+        <a class="text-link" href="{{ project.url | relative_url }}">Read project details</a>
+      </article>
+    {% endfor %}
   </div>
-
-</div>
+</section>
