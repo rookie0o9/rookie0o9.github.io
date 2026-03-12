@@ -42,7 +42,7 @@ M. C. M. Cheung, <a href="https://advances.sciencemag.org/content/5/10/eaaw6548"
 irradiance</a>. Sci. Adv. 5, eaaw6548 (2019).
 <br>
 <figure class="image">
-  <img src="../assets/projects/2019_SA/aaw6548_Figure_fig2_seq2_v1.png" alt="Figure" style="width: 95%"/>
+  <img src="../assets/projects/2019_SA/aaw6548_Figure_fig2_seq2_v1.png" alt="Figure" class="legacy-media-wide"/>
   <figcaption><b>Proposed Neural Network Architecture</b>. <i>After computing summary statistics of the input images and making a prediction via a linear model, a convolutional neural network makes a
 prediction that corrects this linear model. The combined linear+CNN model is shown in bold colors
 and arrows. <br> <br>

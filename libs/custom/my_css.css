@@ -562,6 +562,10 @@ main.container {
   font-size: 0.74rem;
 }
 
+.operator-closing {
+  margin-top: 0.8rem;
+}
+
 .prose {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -610,6 +614,14 @@ main.container {
 .prose code {
   color: var(--green);
   font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+
+.legacy-media-full {
+  width: 100%;
+}
+
+.legacy-media-wide {
+  width: 95%;
 }
 
 .notice-legacy {
