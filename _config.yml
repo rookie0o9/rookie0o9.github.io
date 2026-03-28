@@ -6,3 +6,5 @@ includes:    ./_includes
 collections:
   projects:
     output: true
+  logs:
+    output: true
