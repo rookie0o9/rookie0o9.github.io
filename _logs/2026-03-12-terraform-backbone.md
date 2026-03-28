@@ -7,6 +7,9 @@ category: labs
 tags: [terraform, azure-devops, delivery, q1]
 reading_time: "7 min"
 id: log-2026-03-12-terraform-backbone
+series: terraform-delivery
+series_title: "Terraform Delivery"
+series_order: 3
 ---
 
 What I wanted at the start of Q1 was a Terraform workflow that survives contact with real delivery — not a clean lab setup that falls apart when a second engineer touches it.
