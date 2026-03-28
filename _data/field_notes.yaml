@@ -1,20 +1,36 @@
 notes:
+  - type: ops note
+    date: "2026-03-28"
+    title: "Address Space Planning Is a One-Way Door"
+    lesson: "Overlapping CIDR ranges between cloud VNets and on-premises networks are nearly impossible to untangle after the fact. Plan non-overlapping spaces before deploying anything — the Azure ALZ accelerator enforces this as a hard constraint."
+    command: "az network vnet list --query '[].{name:name,space:addressSpace.addressPrefixes}'"
+
+  - type: ops note
+    date: "2026-03-28"
+    title: "NSGs and ASGs Are Not the Same Problem"
+    lesson: "NSGs enforce traffic policy (allow/deny on ports and protocols). ASGs abstract the target away from IP management. You need both: ASGs to label workloads, NSGs to enforce boundaries. NSGs without ASGs means maintaining IP lists that will drift."
+    command: "az network asg list --resource-group <rg> --query '[].{name:name,id:id}'"
+
   - type: incident log
+    date: "2026-03-01"
     title: "Notes from a Conditional Access Cleanup"
     lesson: "Most policy drift came from exceptions that never expired. The fix was a review cadence, not a bigger policy set."
     command: "Get-MgIdentityConditionalAccessPolicy | Select-Object DisplayName,State"
 
   - type: field note
+    date: "2026-02-28"
     title: "I Trust Logs, Just Not Blindly"
     lesson: "Correlating audit trails with user behaviour and service context catches what single-source log reading misses."
     command: "Search-UnifiedAuditLog -StartDate $start -EndDate $end -Operations UserLoggedIn"
 
   - type: repair log
+    date: "2026-02-20"
     title: "What I Check Before Blaming SMTP"
     lesson: "Scan-to-email failures are often auth, DNS, or TLS profile mismatch before they are transport failures."
     command: "Test-NetConnection smtp.office365.com -Port 587"
 
   - type: ops note
+    date: "2026-02-15"
     title: "Tiny Fixes That Quietly Improve Security"
     lesson: "Naming standards for admin accounts and runbook links inside tickets reduced escalation time more than any tooling change."
     command: "Get-IntuneManagedDevice | Select DeviceName,ComplianceState"
