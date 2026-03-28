@@ -28,6 +28,7 @@ description: "Archive terminal for incident-response notes, operations logs, rep
     {% for log in sorted_logs %}
       <article class="log-item" id="{{ log.id }}" data-category="{{ log.category }}">
         <p class="log-meta">[{{ log.date | date: "%Y-%m-%d" }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
+        {% if log.series %}<p class="log-meta">[series: {{ log.series_title }} // part {{ log.series_order }}]</p>{% endif %}
         <h3><a href="{{ log.url | relative_url }}">{{ log.title }}</a></h3>
         <p>{{ log.summary }}</p>
         <div class="tag-row">
