@@ -4,6 +4,7 @@ layout: default
 <article class="prose section">
   <header>
     <p class="log-meta">[{{ page.date | date: "%Y-%m-%d" }}] {% for tag in page.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ page.reading_time }})</span></p>
+    {% if page.series %}<p class="log-meta">[series: {{ page.series_title }} // part {{ page.series_order }}]</p>{% endif %}
     <h1>{{ page.title }}</h1>
     {% if page.summary %}
       <p class="hero-copy">{{ page.summary }}</p>
@@ -18,6 +19,30 @@ layout: default
   <div class="log-body">
     {{ content }}
   </div>
+  {% if page.series %}
+    {% assign series_posts = site.logs | where: "series", page.series | sort: "series_order" %}
+    {% assign prev_order = page.series_order | minus: 1 %}
+    {% assign next_order = page.series_order | plus: 1 %}
+    {% for sp in series_posts %}
+      {% if sp.series_order == prev_order %}{% assign prev_post = sp %}{% endif %}
+      {% if sp.series_order == next_order %}{% assign next_post = sp %}{% endif %}
+    {% endfor %}
+    <div class="operator-card" style="margin-top: 2rem;">
+      <p class="card-kicker">{{ page.series_title }} &mdash; {{ series_posts.size }}-part series</p>
+      {% for sp in series_posts %}
+        <p class="{% if sp.url == page.url %}operator-meta{% else %}log-meta{% endif %}">
+          {% if sp.url == page.url %}[current] {{ sp.title }}
+          {% else %}<a class="terminal-link" href="{{ sp.url | relative_url }}">&gt; {{ sp.title }}</a>{% endif %}
+        </p>
+      {% endfor %}
+      {% if prev_post or next_post %}
+        <div class="command-row" style="margin-top: 1rem;">
+          {% if prev_post %}<a class="cmd-btn" href="{{ prev_post.url | relative_url }}">&lt; prev</a>{% endif %}
+          {% if next_post %}<a class="cmd-btn" href="{{ next_post.url | relative_url }}">next &gt;</a>{% endif %}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
   <footer class="log-footer">
     <a class="terminal-link" href="{{ '/blog.html' | relative_url }}">&lt; back to logs</a>
   </footer>
