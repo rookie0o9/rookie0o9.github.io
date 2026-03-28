@@ -7,6 +7,9 @@ category: security
 tags: [identity, azure, terraform, security]
 reading_time: "6 min"
 id: log-2026-03-10-wif-over-secrets
+series: terraform-delivery
+series_title: "Terraform Delivery"
+series_order: 2
 ---
 
 The case for replacing service principal secrets in Terraform pipelines with workload identity federation.
