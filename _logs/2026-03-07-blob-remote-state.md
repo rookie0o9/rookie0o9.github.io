@@ -7,6 +7,9 @@ category: ops
 tags: [terraform, azure-storage, state, ops]
 reading_time: "5 min"
 id: log-2026-03-07-blob-remote-state
+series: terraform-delivery
+series_title: "Terraform Delivery"
+series_order: 1
 ---
 
 Remote state in Azure is straightforward to set up and easy to get wrong in ways that compound later.
