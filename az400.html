@@ -1,0 +1,131 @@
+---
+layout: default
+title: AZ-400
+nav: az400
+description: "AZ-400 Microsoft Azure DevOps Solutions — lab notes, exam track, and practical delivery engineering."
+---
+<section class="page-head panel section">
+  <p class="hero-eyebrow">FIXAM // AZ-400 // EXAM TRACK</p>
+  <h1 class="page-title">AZ-400</h1>
+  <p>Microsoft Azure DevOps Solutions. Lab notes, delivery engineering exercises, and exam track documentation covering CI/CD pipelines, source control strategy, infrastructure as code, and security compliance.</p>
+  <div class="status-row">
+    <span class="status-chip">Track: Active</span>
+    <span class="status-chip">Azure DevOps Solutions</span>
+    <span class="status-chip">Learning In Public</span>
+  </div>
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">track overview</h2>
+  </div>
+  <div class="field-grid">
+    <article class="focus-card">
+      <p class="card-kicker">What</p>
+      <h3>Azure DevOps Solutions</h3>
+      <p>AZ-400 covers designing and implementing DevOps practices: source control, CI/CD pipelines, dependency management, infrastructure as code, security and compliance, and observability.</p>
+    </article>
+    <article class="focus-card">
+      <p class="card-kicker">Why</p>
+      <h3>Built on Existing Work</h3>
+      <p>The Terraform delivery backbone, workload identity federation, and Azure DevOps pipeline work already underway maps directly to core AZ-400 exam domains. This track validates and extends that foundation.</p>
+    </article>
+    <article class="focus-card">
+      <p class="card-kicker">Approach</p>
+      <h3>Lab-First, Exam-Second</h3>
+      <p>Labs and real delivery work come first. The exam is a checkpoint on practical knowledge already built, not the starting point. Notes here reflect work done, not study guides.</p>
+    </article>
+    <article class="focus-card">
+      <p class="card-kicker">Status</p>
+      <h3>Current State</h3>
+      <div class="terminal-lines">
+        <p><span class="ok">[ok]</span> ci/cd pipelines: terraform + azure devops</p>
+        <p><span class="ok">[ok]</span> workload identity: federated credentials</p>
+        <p><span class="ok">[ok]</span> remote state: azure blob + rbac</p>
+        <p><span class="warn">[watch]</span> compliance + policy: in progress</p>
+        <p><span class="warn">[watch]</span> observability: in progress</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">az-400 lab notes</h2>
+    <a class="terminal-link" href="{{ '/blog.html' | relative_url }}">open full log archive &gt;</a>
+  </div>
+  {% assign az400_posts = site.logs | where: "series", "az-400" | sort: "series_order" %}
+  {% if az400_posts.size > 0 %}
+    <div class="log-list">
+      {% for log in az400_posts %}
+        <article class="log-item">
+          <p class="log-meta">[{{ log.date | date: "%Y-%m-%d" }}] [az-400 // part {{ log.series_order }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
+          <h3><a href="{{ log.url | relative_url }}">{{ log.title }}</a></h3>
+          <p>{{ log.summary }}</p>
+          <div class="tag-row">
+            {% for tag in log.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="operator-meta">First lab notes incoming.</p>
+  {% endif %}
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">related work // exam domain coverage</h2>
+  </div>
+  <p style="margin-bottom: 1.5rem;">Posts from other series that map directly to AZ-400 exam domains.</p>
+  {% assign tf_posts = site.logs | where: "series", "terraform-delivery" | sort: "series_order" %}
+  {% if tf_posts.size > 0 %}
+    <div class="log-list">
+      {% for log in tf_posts %}
+        <article class="log-item">
+          <p class="log-meta">[{{ log.date | date: "%Y-%m-%d" }}] [terraform-delivery // part {{ log.series_order }}] <span class="meta-plain">({{ log.reading_time }})</span></p>
+          <h3><a href="{{ log.url | relative_url }}">{{ log.title }}</a></h3>
+          <p>{{ log.summary }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+<section class="section panel">
+  <div class="section-head">
+    <h2 class="section-title">exam domain map</h2>
+  </div>
+  <div class="field-grid">
+    <article class="field-card">
+      <p class="card-kicker">Domain 1</p>
+      <h3>Configure Processes and Communications</h3>
+      <p>Activity tracking, collaboration, agile planning. Covered through Azure DevOps board and pipeline configuration.</p>
+      <div class="command-block">$ az boards work-item list --project &lt;project&gt;</div>
+    </article>
+    <article class="field-card">
+      <p class="card-kicker">Domain 2</p>
+      <h3>Design and Implement Source Control</h3>
+      <p>Branching strategy, repository structure, pull request policies. Foundations in the Terraform delivery repo structure.</p>
+      <div class="command-block">$ az repos policy list --repository-id &lt;id&gt;</div>
+    </article>
+    <article class="field-card">
+      <p class="card-kicker">Domain 3</p>
+      <h3>Build and Release Pipelines</h3>
+      <p>The core domain. Plan/apply separation, artefact management, environment gates. Covered in the Terraform backbone series.</p>
+      <div class="command-block">$ az pipelines run --name &lt;pipeline&gt;</div>
+    </article>
+    <article class="field-card">
+      <p class="card-kicker">Domain 4</p>
+      <h3>Security and Compliance</h3>
+      <p>Workload identity federation, secret management, policy-as-code. WIF post covers the credential elimination pattern.</p>
+      <div class="command-block">$ az security assessment list --query '[].displayName'</div>
+    </article>
+    <article class="field-card">
+      <p class="card-kicker">Domain 5</p>
+      <h3>Instrumentation Strategy</h3>
+      <p>Monitoring, alerting, log analytics, feedback loops. Planned: Log Analytics workspace integration and alert rule documentation.</p>
+      <div class="command-block">$ az monitor log-analytics query --workspace &lt;id&gt;</div>
+    </article>
+  </div>
+</section>
