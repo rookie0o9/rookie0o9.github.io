@@ -24,10 +24,11 @@ description: "Archive terminal for incident-response notes, operations logs, rep
     <a class="terminal-link" href="{{ '/archive.html' | relative_url }}">open legacy archive &gt;</a>
   </div>
   <div class="log-list" id="log-list">
-    {% for log in site.data.logs.logs %}
+    {% assign sorted_logs = site.logs | sort: "date" | reverse %}
+    {% for log in sorted_logs %}
       <article class="log-item" id="{{ log.id }}" data-category="{{ log.category }}">
-        <p class="log-meta">[{{ log.date }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
-        <h3>{{ log.title }}</h3>
+        <p class="log-meta">[{{ log.date | date: "%Y-%m-%d" }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
+        <h3><a href="{{ log.url | relative_url }}">{{ log.title }}</a></h3>
         <p>{{ log.summary }}</p>
         <div class="tag-row">
           <span class="tag">{{ log.category }}</span>
