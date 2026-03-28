@@ -1,4 +1,12 @@
 logs:
+  - id: log-2026-03-28-az104-lab04-virtual-networking
+    date: "2026-03-28"
+    title: "AZ-104 Lab 04 — Implementing Virtual Networking in Azure"
+    summary: "Four tasks, two networks, one security boundary, two DNS scopes. Building the address space, security group, and DNS foundations that every subsequent Azure architecture sits on."
+    category: labs
+    tags: [az-104, azure, networking, nsg, dns]
+    reading_time: "6 min"
+
   - id: log-2026-03-12-terraform-backbone
     date: "2026-03-12"
     title: "Building a Credible Terraform Delivery Backbone in Azure DevOps"
@@ -46,3 +54,4 @@ logs:
     category: notes
     tags: [career, devops, security-engineering, operator]
     reading_time: "5 min"
+
