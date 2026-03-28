@@ -28,7 +28,7 @@ description: "FIXAM Lab Notes: security, systems, repair logs, and field notes f
     <div class="terminal-lines">
       <p><span class="ok">[ok]</span> node: london-uk</p>
       <p><span class="ok">[ok]</span> profile: support + security + delivery engineering</p>
-      <p><span class="warn">[watch]</span> current focus: secure delivery backbone in azure devops</p>
+      <p><span class="warn">[watch]</span> current focus: az-104 exam track + azure landing zones deployment</p>
       <p><span class="ok">[ok]</span> documentation mode: enabled</p>
       <p><span class="ok">[ok]</span> public notes: active</p>
     </div>
@@ -69,10 +69,11 @@ description: "FIXAM Lab Notes: security, systems, repair logs, and field notes f
     <a class="terminal-link" href="{{ '/blog.html' | relative_url }}">open archive &gt;</a>
   </div>
   <div class="log-grid">
-    {% for log in site.data.logs.logs limit:4 %}
+    {% assign sorted_logs = site.logs | sort: "date" | reverse %}
+    {% for log in sorted_logs limit:4 %}
       <article class="log-card">
-        <p class="log-meta">[{{ log.date }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
-        <h3><a href="{{ '/blog.html' | relative_url }}#{{ log.id }}">{{ log.title }}</a></h3>
+        <p class="log-meta">[{{ log.date | date: "%Y-%m-%d" }}] {% for tag in log.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ log.reading_time }})</span></p>
+        <h3><a href="{{ log.url | relative_url }}">{{ log.title }}</a></h3>
         <p>{{ log.summary }}</p>
       </article>
     {% endfor %}
