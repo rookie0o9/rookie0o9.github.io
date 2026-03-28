@@ -7,6 +7,9 @@ category: labs
 tags: [az-104, azure, networking, nsg, dns]
 reading_time: "6 min"
 id: log-2026-03-28-az104-lab04-virtual-networking
+series: az-104
+series_title: "AZ-104 Lab Series"
+series_order: 1
 ---
 
 Lab 04 of three. This is the foundational networking lab in the AZ-104 track. Four discrete tasks: building VNets via the portal, deploying a second via ARM template, configuring Application and Network Security Groups, and managing both public and private DNS zones.
