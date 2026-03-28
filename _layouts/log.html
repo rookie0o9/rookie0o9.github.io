@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="prose section">
+  <header>
+    <p class="log-meta">[{{ page.date | date: "%Y-%m-%d" }}] {% for tag in page.tags %}[{{ tag }}] {% endfor %}<span class="meta-plain">({{ page.reading_time }})</span></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}
+      <p class="hero-copy">{{ page.summary }}</p>
+    {% endif %}
+    <div class="tag-row">
+      <span class="tag">{{ page.category }}</span>
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </header>
+  <div class="log-body">
+    {{ content }}
+  </div>
+  <footer class="log-footer">
+    <a class="terminal-link" href="{{ '/blog.html' | relative_url }}">&lt; back to logs</a>
+  </footer>
+</article>
