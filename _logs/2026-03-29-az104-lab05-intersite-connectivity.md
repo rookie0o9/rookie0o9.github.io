@@ -14,7 +14,7 @@ series_order: 2
 
 Lab 05. Three problems, three tools: VNet isolation, peering to fix it, and user-defined routes to control it.
 
-This lab also builds evidence — the Terraform was extracted from the deployed resources and is [stored in the lab reference repo](https://github.com/rookie0o9/rookie0o9.github.io/tree/main/labs/az104/lab05/).
+This lab also builds evidence — the Terraform was extracted from the deployed resources and is [stored in the lab reference repo](https://github.com/rookie0o9/labs/tree/main/az104/lab05/).
 
 ## The topology
 
